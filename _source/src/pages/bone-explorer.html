@@ -1,0 +1,92 @@
+---
+layout: tool
+title: "206 Bone Explorer: Interactive Human Skeleton With Every Bone"
+h1: "206 Bone Explorer"
+description: "Tap any region of an interactive skeleton to see every bone in it: how many there are, what each one does, its other names and a fact worth remembering."
+lede: "Tap a region of the skeleton, pick a chip or search by name. Every one of the 206 bones of a typical adult is here, with what it does and a fact worth remembering."
+scripts: [bones-data, tools/explorer]
+cta: quiz
+wide: true
+priority: 0.95
+keywords: [skeleton, human skeleton, bones of the body, 206 bones, interactive skeleton, anatomy, femur, skull bones, hand bones]
+faq:
+  - q: "Why do adults have 206 bones?"
+    a: "Babies are born with roughly 270 to 300 bony pieces. Many of them fuse during childhood and adolescence, such as the skull plates, the five sacral vertebrae and the three parts of each hip bone, leaving about 206 in a typical adult."
+  - q: "Where are most of the bones in the body?"
+    a: "In the hands and feet. The two wrists and hands hold 54 bones and the two ankles and feet hold 52, so together they contain 106 of the 206 bones, just over half."
+  - q: "What is the largest bone and the smallest bone?"
+    a: "The femur, or thigh bone, is the longest and strongest. The stapes, a stirrup-shaped bone in the middle ear about 3 millimeters long, is the smallest."
+  - q: "Is everyone's bone count exactly 206?"
+    a: "No. 206 is the standard count. Some people have extra sesamoid bones in tendons, small sutural bones in the skull, an extra rib or a different number of fused tailbone segments."
+  - q: "Are teeth counted as bones?"
+    a: "No. Teeth are made of enamel, dentin and pulp, not living bone tissue, so they aren't part of the 206."
+sources:
+  - title: "Bones — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/body/25176-bones"
+  - title: "Anatomy and Physiology 2e, Chapter 7: Axial Skeleton — OpenStax"
+    url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-introduction"
+  - title: "Anatomy and Physiology 2e, Chapter 8: The Appendicular Skeleton — OpenStax"
+    url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-introduction"
+  - title: "Anterior skeletal anatomy — MedlinePlus Medical Encyclopedia"
+    url: "https://medlineplus.gov/ency/imagepages/9065.htm"
+related_tools: [bone-quiz, bone-health-risk-check]
+related_guides: [list-of-206-bones, why-babies-have-more-bones, what-does-206-mean]
+---
+<div class="explorer" data-skeleton="select">
+<div class="explorer-figure">
+<div style="position:relative">{% include skeleton.html %}<span class="zone-tip" aria-hidden="true"></span></div>
+<p class="tool-note" style="text-align:center">Stylized front view, not to scale. Left and right sides are counted together.</p>
+</div>
+<div class="explorer-panel tool" data-explorer>
+<div class="explorer-search">
+<label class="field" style="flex:1"><span>Find a bone</span><input type="search" name="bone_search" placeholder="Try femur, kneecap or stapes" autocomplete="off"></label>
+<button type="button" class="btn btn-ghost" data-explorer-reset style="align-self:end">Show all</button>
+</div>
+<div class="region-chips" data-zone-chips aria-label="Regions"></div>
+<div class="zone-head" data-zone-head aria-live="polite"></div>
+<ul class="bone-cards" data-bone-cards></ul>
+</div>
+</div>
+
+<section class="tool-section" aria-labelledby="inventory-title">
+<h2 id="inventory-title">Full inventory, region by region</h2>
+<p class="muted">Every bone, with its count, shape class and job. Open a region to see its table.</p>
+{% include bone-table.html %}
+</section>
+<!--article-->
+<h2 id="how-to-use">How to use the explorer</h2>
+<p>Tap or click any part of the skeleton, or press Tab to move between regions with a keyboard and Enter to open one. The panel shows how many bones that region holds, what each one does and a fact worth remembering. Type a common name such as <em>collarbone</em>, <em>tailbone</em> or <em>kneecap</em> in the search box and the explorer finds the anatomical name for you.</p>
+<p>Counts are for both sides of the body together. The hands, for example, show 54 bones: 27 in each wrist and hand.</p>
+
+<h2 id="how-206-breaks-down">How the 206 bones break down</h2>
+<p>Anatomists split the skeleton into two parts. The <strong>axial skeleton</strong> (80 bones) runs down the body's center line: the skull, the six tiny ear bones, the hyoid in the throat, the spine and the rib cage. The <strong>appendicular skeleton</strong> (126 bones) is everything that hangs off it: the shoulder girdles, arms and hands, pelvis, legs and feet.</p>
+<div class="table-wrap"><table><caption>The adult skeleton by region</caption>
+<thead><tr><th scope="col">Region</th><th scope="col">Bones</th></tr></thead>
+<tbody>
+<tr><td>Skull (8 cranial, 14 facial)</td><td>22</td></tr>
+<tr><td>Middle ear ossicles</td><td>6</td></tr>
+<tr><td>Hyoid</td><td>1</td></tr>
+<tr><td>Spine (24 vertebrae, sacrum, coccyx)</td><td>26</td></tr>
+<tr><td>Sternum and ribs</td><td>25</td></tr>
+<tr><td>Shoulder girdles</td><td>4</td></tr>
+<tr><td>Arms, wrists and hands</td><td>60</td></tr>
+<tr><td>Hip bones</td><td>2</td></tr>
+<tr><td>Legs, ankles and feet</td><td>60</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>206</strong></td></tr>
+</tbody></table></div>
+
+{% include ad.html %}
+
+<h2 id="bone-shapes">Five bone shapes</h2>
+<p>Bones are also grouped by shape, which hints at their job:</p>
+<ul>
+<li><strong>Long bones</strong> such as the femur and humerus are longer than they are wide and act as levers for movement.</li>
+<li><strong>Short bones</strong> such as the wrist's carpals and the ankle's tarsals are roughly cube-shaped and give stability with a little gliding movement.</li>
+<li><strong>Flat bones</strong> such as the skull plates, ribs and shoulder blades protect organs and give muscles broad surfaces to attach to.</li>
+<li><strong>Irregular bones</strong> such as the vertebrae and many facial bones have complex shapes that don't fit the other groups.</li>
+<li><strong>Sesamoid bones</strong> such as the kneecap and pisiform sit inside tendons, protecting them and improving leverage.</li>
+</ul>
+
+<h2 id="living-tissue">Bones are living tissue</h2>
+<p>Bone constantly breaks down and rebuilds itself in a process called remodeling. That's why bones heal after a fracture, why they grow stronger when you load them with exercise, and why they can thin with age, inactivity or conditions such as osteoporosis. Our <a href="osteoporosis-guide.html">osteoporosis guide</a> and <a href="exercises-for-strong-bones.html">bone-strengthening exercise guide</a> explain how to keep the remodeling balance in your favor.</p>
+{% include cta-inline.html kind="risk" %}

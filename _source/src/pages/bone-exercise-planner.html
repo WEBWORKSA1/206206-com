@@ -1,0 +1,80 @@
+---
+layout: tool
+title: "Bone Exercise Planner: A Weekly Plan for Stronger Bones"
+h1: "Bone exercise planner"
+description: "Build a free weekly plan of impact, strength, balance and posture exercises matched to your fitness, bone health and equipment. Printable, no sign-up."
+lede: "Answer six questions and get a week of impact, strength, balance and posture work built on WHO activity guidelines and osteoporosis exercise advice. Print it or keep it on your phone."
+scripts: [tools/planner]
+cta: care
+wide: true
+priority: 0.85
+keywords: [bone strengthening exercises, osteoporosis exercise plan, weight bearing exercise, balance exercises, exercise for osteopenia]
+faq:
+  - q: "What exercise is best for bones?"
+    a: "A mix: weight-bearing impact such as brisk walking, stamping or jogging; muscle-strengthening work that loads the bones; and balance training to prevent falls. Each does something different, which is why the planner combines them."
+  - q: "Is exercise safe if I have osteoporosis?"
+    a: "For most people, yes, and it's recommended. The Royal Osteoporosis Society advises moderate impact and strength work for most people with osteoporosis, with extra care for those with spinal fractures. If you've had a spinal fracture or fall often, have a physiotherapist check your plan."
+  - q: "How many days a week should I train?"
+    a: "The WHO recommends 150 to 300 minutes of moderate activity a week plus muscle strengthening on at least two days. Adults 65 and older should add balance and strength work on three or more days."
+  - q: "Can I print the plan?"
+    a: "Yes. Use Print plan, or your browser's print option, and the page prints just the week."
+sources:
+  - title: "WHO Guidelines on Physical Activity and Sedentary Behaviour (2020) — World Health Organization"
+    url: "https://www.who.int/publications/i/item/9789240015128"
+  - title: "Exercise and physical activity for osteoporosis and bone health — Royal Osteoporosis Society"
+    url: "https://theros.org.uk/information-and-support/bone-health/exercise-for-bones/"
+  - title: "Exercise for Your Bone Health — NIAMS, National Institutes of Health"
+    url: "https://www.niams.nih.gov/health-topics/exercise-your-bone-health"
+  - title: "Exercise for preventing falls in older people living in the community — Cochrane (2019)"
+    url: "https://www.cochrane.org/evidence/CD012424_exercise-preventing-falls-older-people-living-community"
+related_tools: [bone-health-risk-check, calcium-calculator]
+related_guides: [exercises-for-strong-bones, osteoporosis-guide]
+---
+<div class="tool">
+<form data-planner class="grid-3" style="align-items:start" novalidate>
+<fieldset><legend>Your age</legend><div class="choices">
+<label class="choice"><input type="radio" name="age" value="under-50" checked><span>Under 50</span></label>
+<label class="choice"><input type="radio" name="age" value="50-64"><span>50–64</span></label>
+<label class="choice"><input type="radio" name="age" value="65+"><span>65+</span></label></div></fieldset>
+<fieldset><legend>How active are you now?</legend><div class="choices">
+<label class="choice"><input type="radio" name="level" value="new" checked><span>Just starting</span></label>
+<label class="choice"><input type="radio" name="level" value="some"><span>Somewhat</span></label>
+<label class="choice"><input type="radio" name="level" value="regular"><span>Very</span></label></div></fieldset>
+<fieldset><legend>Your bones</legend><div class="choices">
+<label class="choice"><input type="radio" name="bones" value="healthy" checked><span>No known issues</span></label>
+<label class="choice"><input type="radio" name="bones" value="osteopenia"><span>Low bone density</span></label>
+<label class="choice"><input type="radio" name="bones" value="osteoporosis"><span>Osteoporosis</span></label>
+<label class="choice"><input type="radio" name="bones" value="spine"><span>Spinal fracture</span></label></div></fieldset>
+<fieldset><legend>Balance</legend><div class="choices">
+<label class="choice"><input type="radio" name="balance" value="steady" checked><span>Steady</span></label>
+<label class="choice"><input type="radio" name="balance" value="unsure"><span>A bit unsteady</span></label>
+<label class="choice"><input type="radio" name="balance" value="falls"><span>I've fallen recently</span></label></div></fieldset>
+<fieldset><legend>Days a week</legend><div class="choices">
+<label class="choice"><input type="radio" name="days" value="3"><span>3</span></label>
+<label class="choice"><input type="radio" name="days" value="4" checked><span>4</span></label>
+<label class="choice"><input type="radio" name="days" value="5"><span>5</span></label>
+<label class="choice"><input type="radio" name="days" value="6"><span>6</span></label></div></fieldset>
+<fieldset><legend>Equipment</legend><div class="choices">
+<label class="choice"><input type="radio" name="equipment" value="none" checked><span>None</span></label>
+<label class="choice"><input type="radio" name="equipment" value="bands"><span>Bands</span></label>
+<label class="choice"><input type="radio" name="equipment" value="weights"><span>Weights</span></label></div></fieldset>
+</form>
+<div class="tool-section" data-plan aria-live="polite"></div>
+<div class="tool-actions"><button type="button" class="btn btn-primary" data-print>Print plan</button><a class="btn btn-ghost" href="find-care.html?concern=physio">Find a physiotherapist</a></div>
+</div>
+<!--article-->
+<div class="callout warn"><strong>Important:</strong> This planner gives general suggestions, not a personal prescription. If you have osteoporosis with spinal fractures, frequent falls, heart or lung disease, or you're recovering from surgery, check with a clinician or physiotherapist before starting.</div>
+
+<h2 id="why-this-mix">Why this mix of exercise</h2>
+<p>Bones adapt to the loads you put through them. <strong>Impact</strong> such as stamping, brisk walking or jogging sends quick forces through the hips and spine. <strong>Strength training</strong> loads bones through the pull of working muscles. <strong>Balance work</strong> doesn't build bone directly, but it prevents the falls that cause most fractures. <strong>Posture exercises</strong> strengthen the back muscles that help keep the spine upright.</p>
+
+<h2 id="how-the-plan-is-built">How the plan is built</h2>
+<ul>
+<li><strong>Activity:</strong> the WHO recommends 150 to 300 minutes of moderate activity a week, plus muscle strengthening on two or more days. Older adults should add varied balance and strength training on three or more days.</li>
+<li><strong>Impact:</strong> the Royal Osteoporosis Society's consensus advice suggests around 50 moderate impacts on most days for many people, building up gradually. If you've had spinal fractures or fall often, the planner switches to low-impact moves.</li>
+<li><strong>Strength:</strong> two to three sessions a week, working up to about three sets of 8 to 12 repetitions with enough effort that the last few reps feel hard.</li>
+<li><strong>Care with forward bending:</strong> with osteoporosis, the planner avoids loaded or repeated forward bending and uses a hip hinge instead.</li>
+</ul>
+{% include ad.html %}
+<h2 id="progress-safely">Progress safely</h2>
+<p>Start below what you think you can do, and add a little every week or two: more repetitions first, then more sets, then more load. Mild muscle soreness for a day or two is normal; sharp pain, joint swelling or pain that lingers is not. A physiotherapist can teach technique, adapt moves to your joints and build a plan around past fractures. Our <a href="exercises-for-strong-bones.html">guide to exercises for strong bones</a> explains each type in more depth.</p>

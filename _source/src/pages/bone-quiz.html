@@ -1,0 +1,77 @@
+---
+layout: tool
+title: "Skeleton Quiz and Flashcards: Test Yourself on All 206 Bones"
+h1: "Skeleton quiz and flashcards"
+description: "A free, endless quiz on the 206 bones of the human body, plus flashcards and a bone of the day. Great for anatomy students, teachers and the curious."
+lede: "Ten-question rounds drawn from every bone in the body, flashcards for revision and a new bone every day. Free, no sign-up, and your best streak is saved on this device."
+scripts: [bones-data, tools/quiz]
+cta: care
+priority: 0.85
+keywords: [skeleton quiz, bones quiz, anatomy quiz, bone flashcards, human skeleton test, label the skeleton]
+faq:
+  - q: "Is the quiz suitable for students?"
+    a: "Yes. Questions cover bone names, common names, counts, regions and functions, which matches what most school biology and introductory anatomy courses expect. Use flashcards for revision and the quiz for practice."
+  - q: "Are the questions the same every time?"
+    a: "No. Each round draws ten random questions from five question types across all 62 bone groups, so rounds rarely repeat."
+  - q: "Can teachers use it in class?"
+    a: "Yes, it's free to use in classrooms. Project the page or share the link. Teachers can also enter classes in our seasonal contests."
+  - q: "Is my score stored anywhere?"
+    a: "Only your best streak, and only in your own browser's storage. Nothing is sent to us."
+related_tools: [bone-explorer, bone-health-risk-check]
+related_guides: [list-of-206-bones, why-babies-have-more-bones]
+---
+<div class="tool" data-quiz>
+<div class="tabs" role="tablist" aria-label="Quiz modes">
+<button type="button" class="tab" role="tab" id="tab-quiz" aria-controls="panel-quiz" aria-selected="true">Quiz</button>
+<button type="button" class="tab" role="tab" id="tab-cards" aria-controls="panel-cards" aria-selected="false">Flashcards</button>
+<button type="button" class="tab" role="tab" id="tab-day" aria-controls="panel-day" aria-selected="false">Bone of the day</button>
+</div>
+
+<section class="tab-panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz">
+<div class="quiz-top">
+<p class="result-label" style="width:auto;margin:0">Ten questions per round</p>
+<div class="quiz-score"><span>Score <b data-score>0/0</b></span><span>Streak <b data-streak>0</b></span><span>Best <b data-best>0</b></span></div>
+</div>
+<div class="quiz-progress" aria-hidden="true"><span></span></div>
+<p class="quiz-q" data-q aria-live="polite">Loading question…</p>
+<div class="quiz-options" data-opts></div>
+<div class="quiz-feedback" data-feedback aria-live="polite"></div>
+<div class="tool-actions"><button type="button" class="btn btn-primary" data-next-q hidden>Next question</button></div>
+</section>
+
+<section class="tab-panel" id="panel-cards" role="tabpanel" aria-labelledby="tab-cards" hidden>
+<div class="flashcard" data-flashcard tabindex="0" role="button" aria-label="Flashcard. Press Enter to flip.">
+<div class="flashcard-inner">
+<div class="flashcard-face" data-front></div>
+<div class="flashcard-face flashcard-back" data-back></div>
+</div>
+</div>
+<div class="tool-actions">
+<button type="button" class="btn btn-ghost" data-fc-prev>Previous</button>
+<button type="button" class="btn btn-ghost" data-fc-next>Next</button>
+<button type="button" class="btn btn-primary" data-fc-known>I knew it</button>
+</div>
+<p class="tool-note">Known this session: <strong data-known>0</strong>. The deck is shuffled each visit.</p>
+</section>
+
+<section class="tab-panel" id="panel-day" role="tabpanel" aria-labelledby="tab-day" hidden>
+<div class="bod" data-bod><p>Loading today's bone…</p></div>
+<p class="tool-note">A new bone every day, the same for everyone. Come back tomorrow, or share today's with a friend.</p>
+</section>
+</div>
+<!--article-->
+<h2 id="how-it-works">How the quiz works</h2>
+<p>Each round asks ten questions drawn at random from five types: where a bone sits, how many of it you have, which bone goes by a common name such as the kneecap or collarbone, which bone does a particular job, and how many bones a whole region holds. After every answer you'll see a short explanation, so even a wrong answer teaches you something.</p>
+<p>Flashcards cover all 62 bone groups in the <a href="bone-explorer.html">206 Bone Explorer</a>, from the frontal bone to the distal phalanges of the toes. Tap a card to flip it and see its count, region, job and a fact.</p>
+
+<h2 id="study-tips">Tips for learning the skeleton</h2>
+<ul>
+<li><strong>Learn by region.</strong> Master the 22 skull bones, then the spine, then the limbs. The explorer's region chips make this easy.</li>
+<li><strong>Use the patterns.</strong> Hands and feet mirror each other: 14 phalanges in each hand and foot, five metacarpals and five metatarsals.</li>
+<li><strong>Use mnemonics.</strong> Many students remember the eight carpal bones (scaphoid, lunate, triquetrum, pisiform, trapezium, trapezoid, capitate, hamate) with a short memory sentence that uses the same first letters in the same order.</li>
+<li><strong>Space your practice.</strong> Short daily sessions beat one long cram. The bone of the day is a painless way to keep going.</li>
+</ul>
+{% include ad.html %}
+<h2 id="for-teachers">For teachers and classes</h2>
+<p>The quiz works on classroom projectors, tablets and phones, with no accounts. Our seasonal <a href="contests.html">contests</a> include a class category for schools, with prizes for the class and its teacher.</p>
+{% include cta-inline.html kind="quiz" %}
