@@ -1,0 +1,84 @@
+---
+layout: tool
+title: "Calcium Calculator: Daily Calcium and Vitamin D Needs by Age"
+h1: "Calcium and vitamin D calculator"
+description: "Add up the calcium in the foods you eat, compare it with the recommended amount for your age and sex, and see your vitamin D target. NIH-sourced values."
+lede: "Choose your life stage, tap + for the foods you eat on a typical day, and see how close you are to your calcium target. Values come from the NIH Office of Dietary Supplements."
+scripts: [calcium-foods, calcium-rda, tools/calcium]
+cta: risk
+priority: 0.9
+keywords: [calcium calculator, how much calcium do I need, calcium intake, vitamin D needs, calcium rich foods, daily calcium]
+faq:
+  - q: "How much calcium do adults need a day?"
+    a: "According to the NIH Office of Dietary Supplements, adults 19 to 50 need 1,000 mg a day. Women 51 and older and everyone 71 and older need 1,200 mg, while men 51 to 70 need 1,000 mg."
+  - q: "How much vitamin D do I need?"
+    a: "The recommended amount is 600 IU (15 mcg) a day for people aged 1 to 70, and 800 IU (20 mcg) from age 71. Some people need more, so ask your doctor whether your level should be checked."
+  - q: "Is it better to get calcium from food or supplements?"
+    a: "Food first is the usual advice. Supplements can fill a gap, but very high intakes, mostly from supplements, are linked to kidney stones and other problems. Talk to a clinician before taking them."
+  - q: "Can I take all my calcium supplement at once?"
+    a: "Your body absorbs calcium best in amounts of 500 mg or less at a time, so larger daily amounts are usually split. Calcium carbonate is best taken with food; calcium citrate can be taken with or without food."
+  - q: "Do you save what I enter?"
+    a: "Your food list is saved in your own browser so it's there next time. Nothing is sent to us."
+sources:
+  - title: "Calcium: Fact Sheet for Health Professionals — NIH Office of Dietary Supplements"
+    url: "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+  - title: "Vitamin D: Fact Sheet for Health Professionals — NIH Office of Dietary Supplements"
+    url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+  - title: "Calcium: Fact Sheet for Consumers — NIH Office of Dietary Supplements"
+    url: "https://ods.od.nih.gov/factsheets/Calcium-Consumer/"
+  - title: "Dietary Guidelines for Americans 2020–2025, Appendix: Food Sources of Calcium — USDA and HHS"
+    url: "https://www.dietaryguidelines.gov/food-sources-calcium"
+related_tools: [bone-health-risk-check, bone-exercise-planner]
+related_guides: [calcium-and-vitamin-d-guide, osteoporosis-guide]
+---
+<div class="tool" data-calcium>
+<div class="grid-2">
+<label class="field"><span>Life stage</span><select name="stage"></select></label>
+<label class="field"><span>Calcium from supplements (mg a day)</span><input type="number" name="supplement_mg" min="0" max="3000" step="50" inputmode="numeric" placeholder="0"></label>
+</div>
+
+<div class="results sticky-total" aria-live="polite">
+<div class="result-main"><span class="result-label">Calcium today</span><span class="result-num" data-total>0 mg</span><span class="result-sub" data-gap></span></div>
+<div class="gauge" style="margin-top:12px" aria-hidden="true"><span></span><i class="gauge-mark"></i></div>
+<dl class="result-grid">
+<div><dt>Your daily target</dt><dd data-target>—</dd></div>
+<div><dt>Upper limit</dt><dd data-ul>—</dd></div>
+<div><dt>Vitamin D target</dt><dd data-vitd style="font-size:1.35rem">—</dd></div>
+</dl>
+</div>
+
+<div class="tool-section">
+<div class="explorer-search">
+<label class="field" style="flex:1"><span>Filter foods</span><input type="search" name="food_filter" placeholder="Try yogurt, tofu or sardines" autocomplete="off"></label>
+<button type="button" class="btn btn-ghost" data-reset style="align-self:end">Clear all</button>
+</div>
+<ul class="food-list" data-foods style="margin-top:12px"></ul>
+</div>
+<ul class="warnings" data-tips></ul>
+<p class="tool-note">Food values are approximate per serving, from the NIH Office of Dietary Supplements and the Dietary Guidelines for Americans. Brands vary, especially fortified foods: check the label.</p>
+</div>
+<!--article-->
+<h2 id="why-calcium">Why calcium and vitamin D matter</h2>
+<p>About 99 percent of the body's calcium is stored in bones and teeth. When you don't get enough from food, your body draws on that store to keep blood levels steady, and over years that can thin your bones. Vitamin D helps your gut absorb calcium, so the two work as a team.</p>
+
+<h2 id="daily-targets">Daily targets by age</h2>
+<div class="table-wrap"><table><caption>Recommended Dietary Allowances (NIH Office of Dietary Supplements)</caption>
+<thead><tr><th scope="col">Life stage</th><th scope="col">Calcium</th><th scope="col">Vitamin D</th></tr></thead>
+<tbody>
+<tr><td>Children 1–3</td><td>700 mg</td><td>600 IU</td></tr>
+<tr><td>Children 4–8</td><td>1,000 mg</td><td>600 IU</td></tr>
+<tr><td>Children and teens 9–18</td><td>1,300 mg</td><td>600 IU</td></tr>
+<tr><td>Adults 19–50</td><td>1,000 mg</td><td>600 IU</td></tr>
+<tr><td>Men 51–70</td><td>1,000 mg</td><td>600 IU</td></tr>
+<tr><td>Women 51–70</td><td>1,200 mg</td><td>600 IU</td></tr>
+<tr><td>Adults 71 and older</td><td>1,200 mg</td><td>800 IU</td></tr>
+</tbody></table></div>
+{% include ad.html %}
+<h2 id="hitting-target">Easy ways to hit your target</h2>
+<ul>
+<li><strong>Spread it out.</strong> A calcium-rich food at each meal is easier than one big serving, and your body absorbs smaller amounts better.</li>
+<li><strong>Look beyond dairy.</strong> Calcium-set tofu, canned sardines or salmon with bones, fortified plant milks and juices, and greens such as kale and bok choy all count.</li>
+<li><strong>Read fortified labels.</strong> Calcium content varies widely between brands of plant milk and juice. Shake cartons, because added calcium can settle.</li>
+<li><strong>Don't count on spinach.</strong> It contains calcium, but very little of it is absorbed.</li>
+</ul>
+<p>Our <a href="calcium-and-vitamin-d-guide.html">calcium and vitamin D guide</a> has a full food table and a sample day of eating that reaches 1,000 to 1,200 mg.</p>
