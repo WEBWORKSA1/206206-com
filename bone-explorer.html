@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>206 Bone Explorer: Interactive Human Skeleton With Every Bone</title>
+<meta name="description" content="Tap any region of an interactive skeleton to see every bone in it: how many there are, what each one does, its other names and a fact worth remembering.">
+<link rel="canonical" href="https://webworksa1.github.io/206206-com/bone-explorer.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="206206">
+<meta property="og:title" content="206 Bone Explorer: Interactive Human Skeleton With Every Bone">
+<meta property="og:description" content="Tap any region of an interactive skeleton to see every bone in it: how many there are, what each one does, its other names and a fact worth remembering.">
+<meta property="og:url" content="https://webworksa1.github.io/206206-com/bone-explorer.html">
+<meta property="og:image" content="https://webworksa1.github.io/206206-com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="206206 — Every Bone Counts: the 206 bones of the human body, explained">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&amp;family=Fraunces:opsz,wght@9..144,600..900&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=f50dd2d537">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"206 Bone Explorer","url":"https://webworksa1.github.io/206206-com/bone-explorer.html","description":"Tap any region of an interactive skeleton to see every bone in it: how many there are, what each one does, its other names and a fact worth remembering.","applicationCategory":"HealthApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"206206","url":"https://webworksa1.github.io/206206-com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://webworksa1.github.io/206206-com/"},
+{"@type":"ListItem","position":2,"name":"Tools","item":"https://webworksa1.github.io/206206-com/tools.html"},
+{"@type":"ListItem","position":3,"name":"206 Bone Explorer","item":"https://webworksa1.github.io/206206-com/bone-explorer.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do adults have 206 bones?","acceptedAnswer":{"@type":"Answer","text":"Babies are born with roughly 270 to 300 bony pieces. Many of them fuse during childhood and adolescence, such as the skull plates, the five sacral vertebrae and the three parts of each hip bone, leaving about 206 in a typical adult."}},
+{"@type":"Question","name":"Where are most of the bones in the body?","acceptedAnswer":{"@type":"Answer","text":"In the hands and feet. The two wrists and hands hold 54 bones and the two ankles and feet hold 52, so together they contain 106 of the 206 bones, just over half."}},
+{"@type":"Question","name":"What is the largest bone and the smallest bone?","acceptedAnswer":{"@type":"Answer","text":"The femur, or thigh bone, is the longest and strongest. The stapes, a stirrup-shaped bone in the middle ear about 3 millimeters long, is the smallest."}},
+{"@type":"Question","name":"Is everyone's bone count exactly 206?","acceptedAnswer":{"@type":"Answer","text":"No. 206 is the standard count. Some people have extra sesamoid bones in tendons, small sutural bones in the skull, an extra rib or a different number of fused tailbone segments."}},
+{"@type":"Question","name":"Are teeth counted as bones?","acceptedAnswer":{"@type":"Answer","text":"No. Teeth are made of enamel, dentin and pulp, not living bone tissue, so they aren't part of the 206."}}]}</script>
+</head>
+<body class="layout-tool">
+<a class="skip" href="#main">Skip to content</a>
+<a class="partner-bar" href="https://web.works/contact" target="_blank" rel="noopener"><span>Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</span></a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="index.html" aria-label="206206 home"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M9.2 5.6a3.4 3.4 0 0 0-3.9 5 3.4 3.4 0 0 0 1.8 5.6l8.6 8.6a3.4 3.4 0 0 0 5.6 1.8 3.4 3.4 0 0 0 5-3.9 3.4 3.4 0 0 0-1.7-5.7L16 6.9a3.4 3.4 0 0 0-5.7-1.7 3.4 3.4 0 0 0-1.1-.9z" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="15.6" cy="15.6" r="3.1" fill="var(--amber)"/></svg><span class="brand-word">206206</span><span class="brand-sub">Every Bone Counts</span></a>
+<nav class="main-nav" id="main-nav" aria-label="Main">
+<ul class="nav-list">
+<li class="has-menu"><button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-tools" aria-current="page">Tools<svg class="icon chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg></button>
+<div class="menu menu-wide" id="menu-tools"><div class="menu-group code-day"><p class="menu-head">Anatomy and learning</p><ul><li><a href="bone-explorer.html">206 Bone Explorer</a></li>
+<li><a href="bone-quiz.html">Skeleton quiz and flashcards</a></li></ul></div>
+<div class="menu-group code-eve"><p class="menu-head">Bone health checks</p><ul><li><a href="bone-health-risk-check.html">Bone health risk check</a></li></ul></div>
+<div class="menu-group code-night"><p class="menu-head">Nutrition</p><ul><li><a href="calcium-calculator.html">Calcium and vitamin D calculator</a></li></ul></div>
+<div class="menu-group code-rest"><p class="menu-head">Movement</p><ul><li><a href="bone-exercise-planner.html">Bone exercise planner</a></li></ul></div><p class="menu-foot"><a href="tools.html">All tools</a></p></div></li>
+<li><a class="nav-link" href="guides.html">Guides</a></li>
+<li><a class="nav-link" href="conditions.html">Conditions</a></li>
+<li><a class="nav-link" href="videos.html">Videos</a></li>
+<li><a class="nav-link" href="contests.html">Contests</a></li>
+<li class="has-menu"><button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-more">More<svg class="icon chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg></button>
+<div class="menu" id="menu-more"><ul><li><a href="about.html">About 206206</a></li>
+<li><a href="what-does-206-mean.html">What 206 means</a></li>
+<li><a href="editorial-policy.html">How we write and review</a></li>
+<li><a href="support.html">Support us</a></li>
+<li><a href="advertise.html">Advertise and sponsor</a></li>
+<li><a href="list-your-practice.html">List your practice</a></li>
+<li><a href="careers.html">Careers and contributors</a></li>
+<li><a href="contact.html">Contact</a></li></ul></div></li>
+</ul>
+<a class="btn btn-primary nav-cta-mobile" href="find-care.html">Find a specialist</a>
+</nav>
+<div class="header-actions">
+<button type="button" class="icon-btn" data-search-open aria-label="Search tools, guides and bones"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+<button type="button" class="icon-btn" data-theme-toggle aria-label="Switch between light and dark theme"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18z" fill="currentColor"/><circle cx="12" cy="12" r="9"/></svg></button>
+<a class="btn btn-primary btn-sm header-cta" href="find-care.html">Find a specialist</a>
+<button type="button" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<div class="wrap page-head tool-head code-day"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li>
+<li><a href="tools.html">Tools</a></li>
+<li aria-current="page">206 Bone Explorer</li></ol></nav>
+<h1>206 Bone Explorer</h1><p class="lede">Tap a region of the skeleton, pick a chip or search by name. Every one of the 206 bones of a typical adult is here, with what it does and a fact worth remembering.</p></div>
+<div class="wrap tool-layout tool-wide">
+<section class="tool-main" aria-label="206 Bone Explorer"><div class="explorer" data-skeleton="select">
+<div class="explorer-figure">
+<div style="position:relative"><svg class="skeleton" viewBox="0 0 300 680" role="group" aria-label="Interactive skeleton. Choose a region to see its bones." xmlns="http://www.w3.org/2000/svg">
+<g class="zone" data-zone="spine" tabindex="0" role="button" aria-label="Spine: 26 bones"><title>Spine: 26 bones</title>
+<rect class="b" x="144.0" y="104" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="113" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="122" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="131" width="12" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="140" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="149" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="158" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="167" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="176" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="185" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="194" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="203" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="212" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="221" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="230" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="239" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="248" width="13" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="257" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="266" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="275" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="284" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="293" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="302" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="311" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="320" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="329" width="16" height="7" rx="2.5"/>
+<path class="b" d="M138 334 L162 334 L150 368 Z"/>
+<path class="b" d="M147 369 L153 369 L150 380 Z"/>
+</g>
+<g class="zone" data-zone="chest" tabindex="0" role="button" aria-label="Chest: 25 bones"><title>Chest: 25 bones</title>
+<rect class="b" x="145" y="130" width="10" height="70" rx="4"/>
+<path class="rib" d="M155 136 Q189.0 132 180.0 148.0"/>
+<path class="rib" d="M 145.0 136 Q 111.0 132 120.0 148.0"/>
+<path class="rib" d="M155 146 Q191.4 142 182.4 158.6"/>
+<path class="rib" d="M 145.0 146 Q 108.6 142 117.6 158.6"/>
+<path class="rib" d="M155 156 Q193.8 152 184.8 169.2"/>
+<path class="rib" d="M 145.0 156 Q 106.2 152 115.2 169.2"/>
+<path class="rib" d="M155 166 Q196.2 162 187.2 179.8"/>
+<path class="rib" d="M 145.0 166 Q 103.8 162 112.8 179.8"/>
+<path class="rib" d="M155 176 Q198.6 172 189.6 190.4"/>
+<path class="rib" d="M 145.0 176 Q 101.4 172 110.4 190.4"/>
+<path class="rib" d="M155 186 Q201.0 182 192.0 201.0"/>
+<path class="rib" d="M 145.0 186 Q 99.0 182 108.0 201.0"/>
+<path class="rib" d="M155 196 Q203.4 192 194.4 211.6"/>
+<path class="rib" d="M 145.0 196 Q 96.6 192 105.6 211.6"/>
+<path class="rib" d="M155 206 Q203.4 202 194.4 222.2"/>
+<path class="rib" d="M 145.0 206 Q 96.6 202 105.6 222.2"/>
+<path class="rib" d="M155 216 Q199.4 212 190.4 232.8"/>
+<path class="rib" d="M 145.0 216 Q 100.6 212 109.6 232.8"/>
+<path class="rib" d="M155 226 Q195.4 222 186.4 243.4"/>
+<path class="rib" d="M 145.0 226 Q 104.6 222 113.6 243.4"/>
+</g>
+<g class="zone" data-zone="shoulder" tabindex="0" role="button" aria-label="Shoulders: 4 bones"><title>Shoulders: 4 bones</title>
+<path class="clav" d="M155 124 Q177 116 201 126"/>
+<path class="clav" d="M 145.0 124 Q 123.0 116 99.0 126"/><path class="b scap" d="M190 130 L211 132 L197 176 Z"/>
+<path class="b scap" d="M 110.0 130 L 89.0 132 L 103.0 176 Z"/>
+</g>
+<g class="zone" data-zone="pelvis" tabindex="0" role="button" aria-label="Pelvis: 2 bones"><title>Pelvis: 2 bones</title>
+<path class="b" d="M152 336 C170 320 199 322 202 340 C202 358 188 374 171 382 C162 386 155 380 155 371 Z"/>
+<path class="b" d="M 148.0 336 C 130.0 320 101.0 322 98.0 340 C 98.0 358 112.0 374 129.0 382 C 138.0 386 145.0 380 145.0 371 Z"/><ellipse class="hole" cx="171" cy="370" rx="7" ry="5.5"/><ellipse class="hole" cx="129" cy="370" rx="7" ry="5.5"/>
+</g>
+<g class="zone" data-zone="arm" tabindex="0" role="button" aria-label="Upper arms: 2 bones"><title>Upper arms: 2 bones</title>
+<line class="lo" x1="205" y1="136" x2="214" y2="248" stroke-width="12"/>
+<circle class="b" cx="205" cy="136" r="7.5"/>
+<circle class="b" cx="214" cy="248" r="6.5"/>
+<line class="li" x1="205" y1="136" x2="214" y2="248" stroke-width="9"/>
+<line class="lo" x1="95" y1="136" x2="86" y2="248" stroke-width="12"/>
+<circle class="b" cx="95" cy="136" r="7.5"/>
+<circle class="b" cx="86" cy="248" r="6.5"/>
+<line class="li" x1="95" y1="136" x2="86" y2="248" stroke-width="9"/>
+</g>
+<g class="zone" data-zone="forearm" tabindex="0" role="button" aria-label="Forearms: 4 bones"><title>Forearms: 4 bones</title>
+<line class="lo" x1="209" y1="258" x2="216" y2="358" stroke-width="7.5"/>
+<circle class="b" cx="209" cy="258" r="4.5"/>
+<circle class="b" cx="216" cy="358" r="3.5"/>
+<line class="li" x1="209" y1="258" x2="216" y2="358" stroke-width="4.5"/>
+<line class="lo" x1="91" y1="258" x2="84" y2="358" stroke-width="7.5"/>
+<circle class="b" cx="91" cy="258" r="4.5"/>
+<circle class="b" cx="84" cy="358" r="3.5"/>
+<line class="li" x1="91" y1="258" x2="84" y2="358" stroke-width="4.5"/><line class="lo" x1="218" y1="258" x2="228" y2="358" stroke-width="8"/>
+<circle class="b" cx="218" cy="258" r="4"/>
+<circle class="b" cx="228" cy="358" r="4.5"/>
+<line class="li" x1="218" y1="258" x2="228" y2="358" stroke-width="5"/>
+<line class="lo" x1="82" y1="258" x2="72" y2="358" stroke-width="8"/>
+<circle class="b" cx="82" cy="258" r="4"/>
+<circle class="b" cx="72" cy="358" r="4.5"/>
+<line class="li" x1="82" y1="258" x2="72" y2="358" stroke-width="5"/>
+</g>
+<g class="zone" data-zone="hand" tabindex="0" role="button" aria-label="Wrists and hands: 54 bones"><title>Wrists and hands: 54 bones</title>
+<circle class="b" cx="217" cy="366" r="3.2"/>
+<circle class="b" cx="223" cy="364" r="3.2"/>
+<circle class="b" cx="229" cy="367" r="3.2"/>
+<circle class="b" cx="216" cy="373" r="3.2"/>
+<circle class="b" cx="222" cy="372" r="3.2"/>
+<circle class="b" cx="228" cy="374" r="3.2"/>
+<circle class="b" cx="220" cy="379" r="3.2"/>
+<circle class="b" cx="227" cy="380" r="3.2"/>
+<line class="lo" x1="214" y1="382" x2="206" y2="398" stroke-width="5"/><line class="li" x1="214" y1="382" x2="206" y2="398" stroke-width="2.6"/>
+<line class="lo" x1="218" y1="384" x2="214" y2="406" stroke-width="5"/><line class="li" x1="218" y1="384" x2="214" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="223" y1="384" x2="223" y2="408" stroke-width="5"/><line class="li" x1="223" y1="384" x2="223" y2="408" stroke-width="2.6"/>
+<line class="lo" x1="228" y1="384" x2="231" y2="406" stroke-width="5"/><line class="li" x1="228" y1="384" x2="231" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="232" y1="382" x2="238" y2="402" stroke-width="5"/><line class="li" x1="232" y1="382" x2="238" y2="402" stroke-width="2.6"/>
+<line class="lo" x1="206" y1="399.5" x2="198" y2="414" stroke-width="4.4"/><line class="li" x1="206" y1="399.5" x2="198" y2="414" stroke-width="2.2"/>
+<line class="lo" x1="214" y1="407.5" x2="211" y2="420" stroke-width="4.4"/><line class="li" x1="214" y1="407.5" x2="211" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="211" y1="421.5" x2="209" y2="430" stroke-width="4.4"/><line class="li" x1="211" y1="421.5" x2="209" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="223" y1="409.5" x2="223" y2="423" stroke-width="4.4"/><line class="li" x1="223" y1="409.5" x2="223" y2="423" stroke-width="2.2"/>
+<line class="lo" x1="223" y1="424.5" x2="223" y2="434" stroke-width="4.4"/><line class="li" x1="223" y1="424.5" x2="223" y2="434" stroke-width="2.2"/>
+<line class="lo" x1="231" y1="407.5" x2="234" y2="420" stroke-width="4.4"/><line class="li" x1="231" y1="407.5" x2="234" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="234" y1="421.5" x2="236" y2="430" stroke-width="4.4"/><line class="li" x1="234" y1="421.5" x2="236" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="238" y1="403.5" x2="242" y2="413" stroke-width="4.4"/><line class="li" x1="238" y1="403.5" x2="242" y2="413" stroke-width="2.2"/>
+<line class="lo" x1="242" y1="414.5" x2="244" y2="421" stroke-width="4.4"/><line class="li" x1="242" y1="414.5" x2="244" y2="421" stroke-width="2.2"/>
+<circle class="b" cx="83" cy="366" r="3.2"/>
+<circle class="b" cx="77" cy="364" r="3.2"/>
+<circle class="b" cx="71" cy="367" r="3.2"/>
+<circle class="b" cx="84" cy="373" r="3.2"/>
+<circle class="b" cx="78" cy="372" r="3.2"/>
+<circle class="b" cx="72" cy="374" r="3.2"/>
+<circle class="b" cx="80" cy="379" r="3.2"/>
+<circle class="b" cx="73" cy="380" r="3.2"/>
+<line class="lo" x1="86" y1="382" x2="94" y2="398" stroke-width="5"/><line class="li" x1="86" y1="382" x2="94" y2="398" stroke-width="2.6"/>
+<line class="lo" x1="82" y1="384" x2="86" y2="406" stroke-width="5"/><line class="li" x1="82" y1="384" x2="86" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="77" y1="384" x2="77" y2="408" stroke-width="5"/><line class="li" x1="77" y1="384" x2="77" y2="408" stroke-width="2.6"/>
+<line class="lo" x1="72" y1="384" x2="69" y2="406" stroke-width="5"/><line class="li" x1="72" y1="384" x2="69" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="68" y1="382" x2="62" y2="402" stroke-width="5"/><line class="li" x1="68" y1="382" x2="62" y2="402" stroke-width="2.6"/>
+<line class="lo" x1="94" y1="399.5" x2="102" y2="414" stroke-width="4.4"/><line class="li" x1="94" y1="399.5" x2="102" y2="414" stroke-width="2.2"/>
+<line class="lo" x1="86" y1="407.5" x2="89" y2="420" stroke-width="4.4"/><line class="li" x1="86" y1="407.5" x2="89" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="89" y1="421.5" x2="91" y2="430" stroke-width="4.4"/><line class="li" x1="89" y1="421.5" x2="91" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="77" y1="409.5" x2="77" y2="423" stroke-width="4.4"/><line class="li" x1="77" y1="409.5" x2="77" y2="423" stroke-width="2.2"/>
+<line class="lo" x1="77" y1="424.5" x2="77" y2="434" stroke-width="4.4"/><line class="li" x1="77" y1="424.5" x2="77" y2="434" stroke-width="2.2"/>
+<line class="lo" x1="69" y1="407.5" x2="66" y2="420" stroke-width="4.4"/><line class="li" x1="69" y1="407.5" x2="66" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="66" y1="421.5" x2="64" y2="430" stroke-width="4.4"/><line class="li" x1="66" y1="421.5" x2="64" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="62" y1="403.5" x2="58" y2="413" stroke-width="4.4"/><line class="li" x1="62" y1="403.5" x2="58" y2="413" stroke-width="2.2"/>
+<line class="lo" x1="58" y1="414.5" x2="56" y2="421" stroke-width="4.4"/><line class="li" x1="58" y1="414.5" x2="56" y2="421" stroke-width="2.2"/>
+</g>
+<g class="zone" data-zone="thigh" tabindex="0" role="button" aria-label="Thighs: 2 bones"><title>Thighs: 2 bones</title>
+<line class="lo" x1="172" y1="388" x2="166" y2="512" stroke-width="13"/>
+<circle class="b" cx="172" cy="388" r="6"/>
+<circle class="b" cx="166" cy="512" r="8"/>
+<line class="li" x1="172" y1="388" x2="166" y2="512" stroke-width="10"/>
+<line class="lo" x1="128" y1="388" x2="134" y2="512" stroke-width="13"/>
+<circle class="b" cx="128" cy="388" r="6"/>
+<circle class="b" cx="134" cy="512" r="8"/>
+<line class="li" x1="128" y1="388" x2="134" y2="512" stroke-width="10"/><circle class="b" cx="161" cy="381" r="7"/><circle class="b" cx="139" cy="381" r="7"/>
+</g>
+<g class="zone" data-zone="knee" tabindex="0" role="button" aria-label="Kneecaps: 2 bones"><title>Kneecaps: 2 bones</title>
+<circle class="b pat" cx="166" cy="524" r="6.5"/><circle class="b pat" cx="134" cy="524" r="6.5"/>
+</g>
+<g class="zone" data-zone="leg" tabindex="0" role="button" aria-label="Lower legs: 4 bones"><title>Lower legs: 4 bones</title>
+<line class="lo" x1="166" y1="536" x2="165" y2="624" stroke-width="11"/>
+<circle class="b" cx="166" cy="536" r="6.5"/>
+<circle class="b" cx="165" cy="624" r="5"/>
+<line class="li" x1="166" y1="536" x2="165" y2="624" stroke-width="8"/>
+<line class="lo" x1="134" y1="536" x2="135" y2="624" stroke-width="11"/>
+<circle class="b" cx="134" cy="536" r="6.5"/>
+<circle class="b" cx="135" cy="624" r="5"/>
+<line class="li" x1="134" y1="536" x2="135" y2="624" stroke-width="8"/><line class="lo" x1="179" y1="540" x2="177" y2="620" stroke-width="6.6"/>
+<circle class="b" cx="179" cy="540" r="3.6"/>
+<circle class="b" cx="177" cy="620" r="3.6"/>
+<line class="li" x1="179" y1="540" x2="177" y2="620" stroke-width="3.6"/>
+<line class="lo" x1="121" y1="540" x2="123" y2="620" stroke-width="6.6"/>
+<circle class="b" cx="121" cy="540" r="3.6"/>
+<circle class="b" cx="123" cy="620" r="3.6"/>
+<line class="li" x1="121" y1="540" x2="123" y2="620" stroke-width="3.6"/>
+</g>
+<g class="zone" data-zone="foot" tabindex="0" role="button" aria-label="Ankles and feet: 52 bones"><title>Ankles and feet: 52 bones</title>
+<circle class="b" cx="167" cy="632" r="5"/>
+<circle class="b" cx="175" cy="633" r="4"/>
+<circle class="b" cx="164" cy="640" r="3.4"/>
+<circle class="b" cx="171" cy="641" r="3.2"/>
+<circle class="b" cx="178" cy="641" r="3.2"/>
+<circle class="b" cx="184" cy="639" r="3"/>
+<line class="lo" x1="162" y1="645" x2="158" y2="662" stroke-width="5"/><line class="li" x1="162" y1="645" x2="158" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="158" y1="664" x2="156.4" y2="671" stroke-width="4.4"/><line class="li" x1="158" y1="664" x2="156.4" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="167" y1="646" x2="166" y2="664" stroke-width="5"/><line class="li" x1="167" y1="646" x2="166" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="166" y1="666" x2="165.6" y2="673" stroke-width="4.4"/><line class="li" x1="166" y1="666" x2="165.6" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="172" y1="646" x2="173" y2="664" stroke-width="5"/><line class="li" x1="172" y1="646" x2="173" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="173" y1="666" x2="173.4" y2="673" stroke-width="4.4"/><line class="li" x1="173" y1="666" x2="173.4" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="178" y1="645" x2="180" y2="662" stroke-width="5"/><line class="li" x1="178" y1="645" x2="180" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="180" y1="664" x2="180.8" y2="671" stroke-width="4.4"/><line class="li" x1="180" y1="664" x2="180.8" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="184" y1="643" x2="187" y2="659" stroke-width="5"/><line class="li" x1="184" y1="643" x2="187" y2="659" stroke-width="2.6"/>
+<line class="lo" x1="187" y1="661" x2="188.2" y2="668" stroke-width="4.4"/><line class="li" x1="187" y1="661" x2="188.2" y2="668" stroke-width="2.2"/>
+<circle class="b" cx="133" cy="632" r="5"/>
+<circle class="b" cx="125" cy="633" r="4"/>
+<circle class="b" cx="136" cy="640" r="3.4"/>
+<circle class="b" cx="129" cy="641" r="3.2"/>
+<circle class="b" cx="122" cy="641" r="3.2"/>
+<circle class="b" cx="116" cy="639" r="3"/>
+<line class="lo" x1="138" y1="645" x2="142" y2="662" stroke-width="5"/><line class="li" x1="138" y1="645" x2="142" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="142" y1="664" x2="143.6" y2="671" stroke-width="4.4"/><line class="li" x1="142" y1="664" x2="143.6" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="133" y1="646" x2="134" y2="664" stroke-width="5"/><line class="li" x1="133" y1="646" x2="134" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="134" y1="666" x2="134.4" y2="673" stroke-width="4.4"/><line class="li" x1="134" y1="666" x2="134.4" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="128" y1="646" x2="127" y2="664" stroke-width="5"/><line class="li" x1="128" y1="646" x2="127" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="127" y1="666" x2="126.6" y2="673" stroke-width="4.4"/><line class="li" x1="127" y1="666" x2="126.6" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="122" y1="645" x2="120" y2="662" stroke-width="5"/><line class="li" x1="122" y1="645" x2="120" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="120" y1="664" x2="119.19999999999999" y2="671" stroke-width="4.4"/><line class="li" x1="120" y1="664" x2="119.19999999999999" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="116" y1="643" x2="113" y2="659" stroke-width="5"/><line class="li" x1="116" y1="643" x2="113" y2="659" stroke-width="2.6"/>
+<line class="lo" x1="113" y1="661" x2="111.80000000000001" y2="668" stroke-width="4.4"/><line class="li" x1="113" y1="661" x2="111.80000000000001" y2="668" stroke-width="2.2"/>
+</g>
+<g class="zone" data-zone="head" tabindex="0" role="button" aria-label="Skull and ears: 28 bones"><title>Skull and ears: 28 bones</title>
+<ellipse class="b" cx="150" cy="48" rx="33" ry="37"/><path class="b" d="M127 66 Q128 96 150 101 Q172 96 173 66 Q160 74 150 74 Q140 74 127 66 Z"/><ellipse class="hole" cx="138" cy="52" rx="8" ry="7"/><ellipse class="hole" cx="162" cy="52" rx="8" ry="7"/><path class="hole" d="M150 60 L145.5 71 L154.5 71 Z"/><path class="seam" d="M136 86 L164 86 M141 82 L141 90 M147 82 L147 90 M153 82 L153 90 M159 82 L159 90"/>
+</g>
+<g class="zone" data-zone="neck" tabindex="0" role="button" aria-label="Hyoid: 1 bone"><title>Hyoid: 1 bone</title>
+<path class="hy" d="M139 111 Q150 121 161 111"/>
+</g>
+</svg><span class="zone-tip" aria-hidden="true"></span></div>
+<p class="tool-note" style="text-align:center">Stylized front view, not to scale. Left and right sides are counted together.</p>
+</div>
+<div class="explorer-panel tool" data-explorer>
+<div class="explorer-search">
+<label class="field" style="flex:1"><span>Find a bone</span><input type="search" name="bone_search" placeholder="Try femur, kneecap or stapes" autocomplete="off"></label>
+<button type="button" class="btn btn-ghost" data-explorer-reset style="align-self:end">Show all</button>
+</div>
+<div class="region-chips" data-zone-chips aria-label="Regions"></div>
+<div class="zone-head" data-zone-head aria-live="polite"></div>
+<ul class="bone-cards" data-bone-cards></ul>
+</div>
+</div>
+
+<section class="tool-section" aria-labelledby="inventory-title">
+<h2 id="inventory-title">Full inventory, region by region</h2>
+<p class="muted">Every bone, with its count, shape class and job. Open a region to see its table.</p>
+<div class="bone-tables"><details class="zone-table" id="zone-head" data-zone-table="head"><summary><span>Skull and ears</span><b>28</b></summary><p class="muted">22 skull bones protect the brain and shape the face; 6 tiny ear bones carry sound.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="frontal"><th scope="row">Frontal bone</th><td class="num">1</td><td>Flat</td><td>Forms the forehead and the roofs of the eye sockets.</td></tr>
+<tr id="parietal"><th scope="row">Parietal bones</th><td class="num">2</td><td>Flat</td><td>Form the top and upper sides of the skull.</td></tr>
+<tr id="temporal"><th scope="row">Temporal bones</th><td class="num">2</td><td>Irregular</td><td>Form the lower sides of the skull and house the middle and inner ear.</td></tr>
+<tr id="occipital"><th scope="row">Occipital bone</th><td class="num">1</td><td>Flat</td><td>Forms the back and base of the skull.</td></tr>
+<tr id="sphenoid"><th scope="row">Sphenoid bone</th><td class="num">1</td><td>Irregular</td><td>Links the cranial and facial bones across the middle of the skull base.</td></tr>
+<tr id="ethmoid"><th scope="row">Ethmoid bone</th><td class="num">1</td><td>Irregular</td><td>Separates the nasal cavity from the brain and forms part of the eye sockets.</td></tr>
+<tr id="nasal"><th scope="row">Nasal bones</th><td class="num">2</td><td>Flat</td><td>Form the bridge of the nose.</td></tr>
+<tr id="maxilla"><th scope="row">Maxillae</th><td class="num">2</td><td>Irregular</td><td>Form the upper jaw, hold the upper teeth and shape the cheeks and hard palate.</td></tr>
+<tr id="zygomatic"><th scope="row">Zygomatic bones</th><td class="num">2</td><td>Irregular</td><td>Form the cheekbones and the outer walls of the eye sockets.</td></tr>
+<tr id="mandible"><th scope="row">Mandible</th><td class="num">1</td><td>Irregular</td><td>Holds the lower teeth and moves for chewing and speech.</td></tr>
+<tr id="palatine"><th scope="row">Palatine bones</th><td class="num">2</td><td>Irregular</td><td>Form the back of the hard palate and part of the nasal cavity.</td></tr>
+<tr id="inferior-nasal-concha"><th scope="row">Inferior nasal conchae</th><td class="num">2</td><td>Irregular</td><td>Scroll-shaped bones that warm and humidify air inside the nose.</td></tr>
+<tr id="lacrimal"><th scope="row">Lacrimal bones</th><td class="num">2</td><td>Flat</td><td>Form part of each eye socket and the channel that drains tears into the nose.</td></tr>
+<tr id="vomer"><th scope="row">Vomer</th><td class="num">1</td><td>Flat</td><td>Forms the lower back part of the nasal septum.</td></tr>
+<tr id="malleus"><th scope="row">Malleus</th><td class="num">2</td><td>Irregular</td><td>Attached to the eardrum, it passes sound vibrations to the incus.</td></tr>
+<tr id="incus"><th scope="row">Incus</th><td class="num">2</td><td>Irregular</td><td>Links the malleus to the stapes in the chain of hearing bones.</td></tr>
+<tr id="stapes"><th scope="row">Stapes</th><td class="num">2</td><td>Irregular</td><td>Pushes sound vibrations into the fluid of the inner ear.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-neck" data-zone-table="neck"><summary><span>Throat (hyoid)</span><b>1</b></summary><p class="muted">The only bone that doesn&#x27;t touch another bone, anchoring the tongue and helping you swallow.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="hyoid"><th scope="row">Hyoid bone</th><td class="num">1</td><td>Irregular</td><td>Anchors the tongue and the muscles used for swallowing and speech.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-spine" data-zone-table="spine"><summary><span>Spine</span><b>26</b></summary><p class="muted">26 bones in an adult: 24 vertebrae plus the fused sacrum and coccyx, protecting the spinal cord.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="atlas"><th scope="row">Atlas (C1)</th><td class="num">1</td><td>Irregular</td><td>Supports the skull and lets you nod yes.</td></tr>
+<tr id="axis"><th scope="row">Axis (C2)</th><td class="num">1</td><td>Irregular</td><td>Its peg (the dens) lets the head and atlas rotate to shake no.</td></tr>
+<tr id="cervical-vertebrae"><th scope="row">Cervical vertebrae C3 to C7</th><td class="num">5</td><td>Irregular</td><td>Support and move the neck and protect the spinal cord.</td></tr>
+<tr id="thoracic-vertebrae"><th scope="row">Thoracic vertebrae</th><td class="num">12</td><td>Irregular</td><td>Anchor the ribs and protect the spinal cord through the chest.</td></tr>
+<tr id="lumbar-vertebrae"><th scope="row">Lumbar vertebrae</th><td class="num">5</td><td>Irregular</td><td>Carry most of the upper body&#x27;s weight and allow bending.</td></tr>
+<tr id="sacrum"><th scope="row">Sacrum</th><td class="num">1</td><td>Irregular</td><td>Connects the spine to the pelvis at the sacroiliac joints.</td></tr>
+<tr id="coccyx"><th scope="row">Coccyx</th><td class="num">1</td><td>Irregular</td><td>Anchors pelvic floor muscles and helps support you when sitting.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-chest" data-zone-table="chest"><summary><span>Chest</span><b>25</b></summary><p class="muted">The sternum and 24 ribs form a flexible cage around the heart and lungs.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="sternum"><th scope="row">Sternum</th><td class="num">1</td><td>Flat</td><td>Anchors the upper ribs and protects the heart.</td></tr>
+<tr id="true-ribs"><th scope="row">True ribs (1 to 7)</th><td class="num">14</td><td>Flat</td><td>Attach directly to the sternum through their own cartilage.</td></tr>
+<tr id="false-ribs"><th scope="row">False ribs (8 to 10)</th><td class="num">6</td><td>Flat</td><td>Connect to the sternum indirectly, through the cartilage of the rib above.</td></tr>
+<tr id="floating-ribs"><th scope="row">Floating ribs (11 and 12)</th><td class="num">4</td><td>Flat</td><td>Attach only to the spine and help protect the kidneys.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-shoulder" data-zone-table="shoulder"><summary><span>Shoulders</span><b>4</b></summary><p class="muted">Collarbones and shoulder blades link the arms to the trunk and give the shoulder its huge range of motion.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="clavicle"><th scope="row">Clavicles</th><td class="num">2</td><td>Long</td><td>Brace the shoulders away from the chest so the arms can move freely.</td></tr>
+<tr id="scapula"><th scope="row">Scapulae</th><td class="num">2</td><td>Flat</td><td>Provide the shoulder socket and anchor 17 muscles.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-arm" data-zone-table="arm"><summary><span>Upper arms</span><b>2</b></summary><p class="muted">One long humerus in each upper arm, from shoulder to elbow.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="humerus"><th scope="row">Humerus</th><td class="num">2</td><td>Long</td><td>Links the shoulder to the elbow and anchors the arm&#x27;s major muscles.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-forearm" data-zone-table="forearm"><summary><span>Forearms</span><b>4</b></summary><p class="muted">The radius and ulna let you turn your palm up and down.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="radius"><th scope="row">Radius</th><td class="num">2</td><td>Long</td><td>Rotates around the ulna to turn the palm up and down.</td></tr>
+<tr id="ulna"><th scope="row">Ulna</th><td class="num">2</td><td>Long</td><td>Forms the hinge of the elbow on the little-finger side of the forearm.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-hand" data-zone-table="hand"><summary><span>Wrists and hands</span><b>54</b></summary><p class="muted">54 bones in two wrists and hands: more than a quarter of the whole skeleton.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="scaphoid"><th scope="row">Scaphoid</th><td class="num">2</td><td>Short</td><td>Bridges the two rows of wrist bones on the thumb side.</td></tr>
+<tr id="lunate"><th scope="row">Lunate</th><td class="num">2</td><td>Short</td><td>Sits in the center of the wrist&#x27;s first row, against the radius.</td></tr>
+<tr id="triquetrum"><th scope="row">Triquetrum</th><td class="num">2</td><td>Short</td><td>Forms part of the wrist on the little-finger side.</td></tr>
+<tr id="pisiform"><th scope="row">Pisiform</th><td class="num">2</td><td>Sesamoid</td><td>Acts as a lever for a muscle that bends the wrist.</td></tr>
+<tr id="trapezium"><th scope="row">Trapezium</th><td class="num">2</td><td>Short</td><td>Forms the saddle joint at the base of the thumb.</td></tr>
+<tr id="trapezoid"><th scope="row">Trapezoid</th><td class="num">2</td><td>Short</td><td>Supports the base of the index finger&#x27;s metacarpal.</td></tr>
+<tr id="capitate"><th scope="row">Capitate</th><td class="num">2</td><td>Short</td><td>The central keystone of the wrist.</td></tr>
+<tr id="hamate"><th scope="row">Hamate</th><td class="num">2</td><td>Short</td><td>Supports the ring and little fingers and forms an edge of the carpal tunnel.</td></tr>
+<tr id="metacarpals"><th scope="row">Metacarpals</th><td class="num">10</td><td>Long</td><td>Form the palm, five in each hand.</td></tr>
+<tr id="hand-proximal-phalanges"><th scope="row">Proximal phalanges of the hand</th><td class="num">10</td><td>Long</td><td>The first bone of each finger and thumb.</td></tr>
+<tr id="hand-middle-phalanges"><th scope="row">Middle phalanges of the hand</th><td class="num">8</td><td>Long</td><td>The middle bone of each finger.</td></tr>
+<tr id="hand-distal-phalanges"><th scope="row">Distal phalanges of the hand</th><td class="num">10</td><td>Long</td><td>The fingertip bones that support the nails and pads.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-pelvis" data-zone-table="pelvis"><summary><span>Pelvis</span><b>2</b></summary><p class="muted">Two hip bones meet the sacrum to carry the upper body&#x27;s weight into the legs.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="hip-bone"><th scope="row">Hip bones</th><td class="num">2</td><td>Irregular</td><td>Form the pelvis with the sacrum, hold the hip sockets and protect pelvic organs.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-thigh" data-zone-table="thigh"><summary><span>Thighs</span><b>2</b></summary><p class="muted">The femur is the longest and strongest bone in the body.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="femur"><th scope="row">Femur</th><td class="num">2</td><td>Long</td><td>Carries body weight from the hip to the knee.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-knee" data-zone-table="knee"><summary><span>Kneecaps</span><b>2</b></summary><p class="muted">The patella is the largest sesamoid bone, sitting inside the quadriceps tendon.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="patella"><th scope="row">Patella</th><td class="num">2</td><td>Sesamoid</td><td>Protects the knee and gives the quadriceps more leverage.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-leg" data-zone-table="leg"><summary><span>Lower legs</span><b>4</b></summary><p class="muted">The tibia carries most of your weight; the slim fibula anchors muscles and steadies the ankle.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="tibia"><th scope="row">Tibia</th><td class="num">2</td><td>Long</td><td>The main weight-bearing bone of the lower leg.</td></tr>
+<tr id="fibula"><th scope="row">Fibula</th><td class="num">2</td><td>Long</td><td>Anchors muscles and forms the outer ankle bone.</td></tr>
+</tbody></table></div></details>
+<details class="zone-table" id="zone-foot" data-zone-table="foot"><summary><span>Ankles and feet</span><b>52</b></summary><p class="muted">52 bones in two feet and ankles absorb shock and push you forward with every step.</p><div class="table-wrap"><table><thead><tr><th scope="col">Bone</th><th scope="col">Count</th><th scope="col">Shape</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="talus"><th scope="row">Talus</th><td class="num">2</td><td>Short</td><td>Links the leg to the foot at the ankle joint.</td></tr>
+<tr id="calcaneus"><th scope="row">Calcaneus</th><td class="num">2</td><td>Short</td><td>Forms the heel and anchors the Achilles tendon.</td></tr>
+<tr id="navicular"><th scope="row">Navicular</th><td class="num">2</td><td>Short</td><td>Sits at the top of the inner arch, between the talus and cuneiforms.</td></tr>
+<tr id="cuboid"><th scope="row">Cuboid</th><td class="num">2</td><td>Short</td><td>Supports the outer side of the foot.</td></tr>
+<tr id="medial-cuneiform"><th scope="row">Medial cuneiform</th><td class="num">2</td><td>Short</td><td>Supports the big toe&#x27;s metatarsal.</td></tr>
+<tr id="intermediate-cuneiform"><th scope="row">Intermediate cuneiform</th><td class="num">2</td><td>Short</td><td>Supports the second metatarsal.</td></tr>
+<tr id="lateral-cuneiform"><th scope="row">Lateral cuneiform</th><td class="num">2</td><td>Short</td><td>Supports the third metatarsal.</td></tr>
+<tr id="metatarsals"><th scope="row">Metatarsals</th><td class="num">10</td><td>Long</td><td>Form the middle of the foot, five in each.</td></tr>
+<tr id="foot-proximal-phalanges"><th scope="row">Proximal phalanges of the foot</th><td class="num">10</td><td>Long</td><td>The first bone of each toe.</td></tr>
+<tr id="foot-middle-phalanges"><th scope="row">Middle phalanges of the foot</th><td class="num">8</td><td>Long</td><td>The middle bone of each smaller toe.</td></tr>
+<tr id="foot-distal-phalanges"><th scope="row">Distal phalanges of the foot</th><td class="num">10</td><td>Long</td><td>Support the tips of the toes and the toenails.</td></tr>
+</tbody></table></div></details><p class="bone-total">Total: <b>206</b> bones</p></div>
+</section>
+</section>
+
+</div>
+<div class="wrap"><aside class="ad-slot ad-after-tool" data-ad="after-tool" aria-label="Advertisement"></aside></div>
+<div class="wrap article-wrap"><article class="prose">
+<h2 id="how-to-use">How to use the explorer</h2>
+<p>Tap or click any part of the skeleton, or press Tab to move between regions with a keyboard and Enter to open one. The panel shows how many bones that region holds, what each one does and a fact worth remembering. Type a common name such as <em>collarbone</em>, <em>tailbone</em> or <em>kneecap</em> in the search box and the explorer finds the anatomical name for you.</p>
+<p>Counts are for both sides of the body together. The hands, for example, show 54 bones: 27 in each wrist and hand.</p>
+<h2 id="how-206-breaks-down">How the 206 bones break down</h2>
+<p>Anatomists split the skeleton into two parts. The <strong>axial skeleton</strong> (80 bones) runs down the body's center line: the skull, the six tiny ear bones, the hyoid in the throat, the spine and the rib cage. The <strong>appendicular skeleton</strong> (126 bones) is everything that hangs off it: the shoulder girdles, arms and hands, pelvis, legs and feet.</p>
+<div class="table-wrap"><table><caption>The adult skeleton by region</caption>
+<thead><tr><th scope="col">Region</th><th scope="col">Bones</th></tr></thead>
+<tbody>
+<tr><td>Skull (8 cranial, 14 facial)</td><td>22</td></tr>
+<tr><td>Middle ear ossicles</td><td>6</td></tr>
+<tr><td>Hyoid</td><td>1</td></tr>
+<tr><td>Spine (24 vertebrae, sacrum, coccyx)</td><td>26</td></tr>
+<tr><td>Sternum and ribs</td><td>25</td></tr>
+<tr><td>Shoulder girdles</td><td>4</td></tr>
+<tr><td>Arms, wrists and hands</td><td>60</td></tr>
+<tr><td>Hip bones</td><td>2</td></tr>
+<tr><td>Legs, ankles and feet</td><td>60</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>206</strong></td></tr>
+</tbody></table></div>
+
+<aside class="ad-slot ad-in-article" data-ad="in-article" aria-label="Advertisement"></aside>
+
+<h2 id="bone-shapes">Five bone shapes</h2>
+<p>Bones are also grouped by shape, which hints at their job:</p>
+<ul>
+<li><strong>Long bones</strong> such as the femur and humerus are longer than they are wide and act as levers for movement.</li>
+<li><strong>Short bones</strong> such as the wrist's carpals and the ankle's tarsals are roughly cube-shaped and give stability with a little gliding movement.</li>
+<li><strong>Flat bones</strong> such as the skull plates, ribs and shoulder blades protect organs and give muscles broad surfaces to attach to.</li>
+<li><strong>Irregular bones</strong> such as the vertebrae and many facial bones have complex shapes that don't fit the other groups.</li>
+<li><strong>Sesamoid bones</strong> such as the kneecap and pisiform sit inside tendons, protecting them and improving leverage.</li>
+</ul>
+
+<h2 id="living-tissue">Bones are living tissue</h2>
+<p>Bone constantly breaks down and rebuilds itself in a process called remodeling. That's why bones heal after a fracture, why they grow stronger when you load them with exercise, and why they can thin with age, inactivity or conditions such as osteoporosis. Our <a href="osteoporosis-guide.html">osteoporosis guide</a> and <a href="exercises-for-strong-bones.html">bone-strengthening exercise guide</a> explain how to keep the remodeling balance in your favor.</p>
+<div class="cta-inline cta-risk"><div><p class="cta-title">Where do your bones stand?</p><p>Take the two-minute bone health risk check. It's private, needs no sign-up, and ends with questions to bring to your next appointment.</p></div><a class="btn btn-primary" href="bone-health-risk-check.html">Take the risk check</a></div>
+<div class="share" data-share>
+<span class="share-label">Share</span>
+<button type="button" class="chip" data-share-native><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Share</button>
+<button type="button" class="chip" data-share-copy><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>Copy link</button>
+<a class="chip" data-share-to="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+<a class="chip" data-share-to="facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+<a class="chip" data-share-to="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+<a class="chip" data-share-to="x" href="#" target="_blank" rel="noopener">X</a>
+</div></article></div>
+<div class="wrap after-article"><section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">Questions people ask</h2><details class="faq-item"><summary>Why do adults have 206 bones?</summary><div class="faq-a"><p>Babies are born with roughly 270 to 300 bony pieces. Many of them fuse during childhood and adolescence, such as the skull plates, the five sacral vertebrae and the three parts of each hip bone, leaving about 206 in a typical adult.</p></div></details>
+<details class="faq-item"><summary>Where are most of the bones in the body?</summary><div class="faq-a"><p>In the hands and feet. The two wrists and hands hold 54 bones and the two ankles and feet hold 52, so together they contain 106 of the 206 bones, just over half.</p></div></details>
+<details class="faq-item"><summary>What is the largest bone and the smallest bone?</summary><div class="faq-a"><p>The femur, or thigh bone, is the longest and strongest. The stapes, a stirrup-shaped bone in the middle ear about 3 millimeters long, is the smallest.</p></div></details>
+<details class="faq-item"><summary>Is everyone&#x27;s bone count exactly 206?</summary><div class="faq-a"><p>No. 206 is the standard count. Some people have extra sesamoid bones in tendons, small sutural bones in the skull, an extra rib or a different number of fused tailbone segments.</p></div></details>
+<details class="faq-item"><summary>Are teeth counted as bones?</summary><div class="faq-a"><p>No. Teeth are made of enamel, dentin and pulp, not living bone tissue, so they aren&#x27;t part of the 206.</p></div></details></section><section class="sources" aria-labelledby="src-title"><h2 id="src-title">Sources</h2><p class="muted">We link to official and primary sources so you can check our work. Rules change; confirm anything important with the source.</p><ol><li><a href="https://my.clevelandclinic.org/health/body/25176-bones" target="_blank" rel="noopener">Bones — Cleveland Clinic</a></li>
+<li><a href="https://openstax.org/books/anatomy-and-physiology-2e/pages/7-introduction" target="_blank" rel="noopener">Anatomy and Physiology 2e, Chapter 7: Axial Skeleton — OpenStax</a></li>
+<li><a href="https://openstax.org/books/anatomy-and-physiology-2e/pages/8-introduction" target="_blank" rel="noopener">Anatomy and Physiology 2e, Chapter 8: The Appendicular Skeleton — OpenStax</a></li>
+<li><a href="https://medlineplus.gov/ency/imagepages/9065.htm" target="_blank" rel="noopener">Anterior skeletal anatomy — MedlinePlus Medical Encyclopedia</a></li></ol></section><section class="related" aria-labelledby="rel-title"><h2 id="rel-title">Keep going</h2><div class="related-grid">
+<div><h3 class="related-head">Tools</h3><ul class="roster roster-compact"><li class="roster-item code-day"><a href="bone-quiz.html"><span class="roster-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="4" width="17" height="14" rx="2"/><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4V13M12 15.6h.01M8 21h8"/></svg></span><span class="roster-text"><strong>Skeleton quiz and flashcards</strong><span>Test yourself on all 206 bones with quick quizzes, flashcards and a bone of the day.</span></span></a></li>
+<li class="roster-item code-eve"><a href="bone-health-risk-check.html"><span class="roster-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.4-4.6"/></svg></span><span class="roster-text"><strong>Bone health risk check</strong><span>A private two-minute check of common osteoporosis risk factors, with clear next steps.</span></span></a></li></ul></div>
+<div><h3 class="related-head">Guides</h3><ul class="guide-list guide-list-compact"><li class="guide-item code-day"><a href="list-of-206-bones.html"><span class="guide-cat">Anatomy</span><strong>All 206 bones in the human body, region by region</strong><span class="guide-desc">The complete list of all 206 adult bones by region, with tables for the skull, spine, ribs, arms, hands, legs and feet, plus why bone counts vary by person.</span><span class="guide-time">10 min read</span></a></li>
+<li class="guide-item code-day"><a href="why-babies-have-more-bones.html"><span class="guide-cat">Anatomy</span><strong>Why babies have more bones than adults</strong><span class="guide-desc">Babies start life with roughly 270 to 300 bony pieces that fuse into 206 adult bones. Learn how ossification, fontanelles and growth plates shape a skeleton.</span><span class="guide-time">9 min read</span></a></li>
+<li class="guide-item code-hist"><a href="what-does-206-mean.html"><span class="guide-cat">Meaning</span><strong>What does 206 mean?</strong><span class="guide-desc">206 is the number of bones in the adult skeleton, Seattle&#x27;s area code, the HTTP Partial Content status and a semiprime. Here is what 206 and 206206 mean.</span><span class="guide-time">9 min read</span></a></li></ul></div>
+</div></section></div>
+<section class="lead-band" aria-labelledby="lead-band-title">
+<div class="wrap lead-band-inner">
+<div class="lead-band-copy">
+<h2 id="lead-band-title">Get the right bone and joint care, sooner</h2>
+<p>Answer four quick questions and we'll help you reach a bone density service, orthopedic specialist, rheumatologist or physiotherapist that fits your concern, location and coverage.</p>
+<ul class="ticks">
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>About a minute, on any device</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Free, with no obligation</li>
+<li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>You choose who contacts you, and how</li>
+</ul>
+</div>
+<div class="lead-band-start">
+<p class="lead-band-step">Start here: what would you like help with?</p>
+<ul class="pick-list"><li><a class="pick" href="find-care.html?concern=bone-density">Bone density or osteoporosis</a></li>
+<li><a class="pick" href="find-care.html?concern=joint-pain">Joint pain or arthritis</a></li>
+<li><a class="pick" href="find-care.html?concern=back-neck">Back or neck pain</a></li>
+<li><a class="pick" href="find-care.html?concern=sports-injury">Sports injury</a></li>
+<li><a class="pick" href="find-care.html?concern=fracture">Broken bone recovery</a></li>
+<li><a class="pick" href="find-care.html?concern=physio">Physiotherapy or rehab</a></li>
+<li><a class="pick" href="find-care.html?concern=foot-ankle">Foot and ankle</a></li>
+<li><a class="pick" href="find-care.html?concern=other">Something else</a></li></ul>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-top">
+<div class="footer-brand">
+<a class="brand brand-footer" href="index.html" aria-label="206206 home"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M9.2 5.6a3.4 3.4 0 0 0-3.9 5 3.4 3.4 0 0 0 1.8 5.6l8.6 8.6a3.4 3.4 0 0 0 5.6 1.8 3.4 3.4 0 0 0 5-3.9 3.4 3.4 0 0 0-1.7-5.7L16 6.9a3.4 3.4 0 0 0-5.7-1.7 3.4 3.4 0 0 0-1.1-.9z" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="15.6" cy="15.6" r="3.1" fill="var(--amber)"/></svg><span class="brand-word">206206</span><span class="brand-sub">Every Bone Counts</span></a>
+<p>The 206 bones of the human body, explained clearly, plus free tools and sourced guides to help you build, protect and repair them at every age.</p>
+<p class="footer-mail"><a class="mail-link" href="contact.html" data-mail data-subject="Hello from 206206.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>Email us</a></p>
+</div>
+<div class="footer-news">
+<h2 class="footer-head">The 206 Brief</h2>
+<p>New tools, bone health research in plain language, exercise ideas and contest news. About two emails a month.</p>
+<form class="form form-newsletter" data-form="newsletter" data-subject="New newsletter signup — 206206" data-success="You're subscribed. The next issue of The 206 Brief lands in your inbox." novalidate>
+<div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+<label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+<label class="field"><span>I'm mostly here for</span><select name="audience"><option>My own bone and joint health</option><option>A parent or family member</option><option>Studying anatomy</option><option>My work as a health professional</option></select></label>
+<label class="check"><input type="checkbox" name="consent_newsletter" value="yes" required data-consent> <span>Send me The 206 Brief, about two emails a month. Unsubscribe any time.</span></label>
+<button class="btn btn-primary" type="submit">Subscribe</button>
+<p class="form-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+<div class="wrap footer-cols">
+<div><h2 class="footer-head">Tools</h2><ul><li><a href="bone-explorer.html">206 Bone Explorer</a></li>
+<li><a href="bone-quiz.html">Skeleton quiz and flashcards</a></li>
+<li><a href="bone-health-risk-check.html">Bone health risk check</a></li>
+<li><a href="calcium-calculator.html">Calcium and vitamin D calculator</a></li>
+<li><a href="bone-exercise-planner.html">Bone exercise planner</a></li></ul></div>
+<div><h2 class="footer-head">Guides</h2><ul><li><a href="list-of-206-bones.html">All 206 bones, listed</a></li>
+<li><a href="osteoporosis-guide.html">Osteoporosis</a></li>
+<li><a href="bone-density-test-guide.html">Bone density (DXA) tests</a></li>
+<li><a href="calcium-and-vitamin-d-guide.html">Calcium and vitamin D</a></li>
+<li><a href="exercises-for-strong-bones.html">Exercises for strong bones</a></li>
+<li><a href="broken-bone-healing-guide.html">Broken bone healing</a></li>
+<li><a href="arthritis-and-joint-pain-guide.html">Arthritis and joint pain</a></li>
+<li><a href="why-babies-have-more-bones.html">Why babies have more bones</a></li>
+<li><a href="what-does-206-mean.html">What 206 means</a></li></ul></div>
+<div><h2 class="footer-head">Get involved</h2><ul><li><a href="find-care.html">Find a bone and joint specialist</a></li>
+<li><a href="list-your-practice.html">List your practice</a></li>
+<li><a href="contests.html">Contests and prizes</a></li>
+<li><a href="support.html">Support us</a></li>
+<li><a href="advertise.html">Advertise and sponsor</a></li>
+<li><a href="careers.html">Careers and contributors</a></li></ul></div>
+<div><h2 class="footer-head">Company</h2><ul><li><a href="about.html">About</a></li>
+<li><a href="editorial-policy.html">Editorial policy</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+<li><a href="terms.html">Terms of use</a></li>
+<li><a href="disclaimer.html">Medical disclaimer and trademarks</a></li></ul></div>
+</div>
+<div class="wrap footer-legal">
+<p><strong>Medical disclaimer:</strong> 206206.com provides general health and anatomy education. It is not medical advice and does not replace diagnosis or treatment by a qualified clinician. Tool results are estimates for discussion with a professional. In an emergency, call your local emergency number. <a href="disclaimer.html">Read the full disclaimer</a>.</p>
+<p><strong>Trademark and copyright notice:</strong> &ldquo;206206&rdquo; is used here as a descriptive numeric domain name referring to the 206 bones of the adult human skeleton. No trademark rights are claimed in the number, and 206206.com is not affiliated with, sponsored or endorsed by any company, product, carrier, organization or person that uses the numbers 206, 206206 or similar marks. Other product names and trademarks belong to their owners. Original text, tools, illustrations and code &copy; 2026 206206.com; embedded videos remain the property of their creators. <a href="disclaimer.html#trademark">Read the full disclosure</a>.</p>
+</div>
+</footer>
+<dialog class="search-dialog" id="search-dialog" aria-label="Search tools, guides and bones">
+<div class="search-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input type="search" id="search-input" placeholder="Search tools, guides and bones" autocomplete="off" aria-controls="search-results" aria-label="Search tools, guides and bones"><button type="button" class="icon-btn" data-search-close aria-label="Close search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<ul class="search-results" id="search-results" role="listbox" aria-label="Results"></ul>
+<p class="search-hint">Try &ldquo;femur&rdquo;, &ldquo;osteoporosis&rdquo; or &ldquo;calcium&rdquo;.</p>
+</dialog>
+<script src="assets/js/config.js?v=f50dd2d537"></script>
+<script src="assets/js/app.js?v=f50dd2d537" defer></script>
+<script src="assets/js/tools/core.js?v=f50dd2d537" defer></script>
+<script src="assets/js/bones-data.js?v=f50dd2d537" defer></script>
+<script src="assets/js/tools/explorer.js?v=f50dd2d537" defer></script>
+</body>
+</html>
