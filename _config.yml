@@ -1,0 +1,5 @@
+# GitHub Pages builds this repository root with Jekyll. The site is pre-built static HTML
+# (no front matter), so Jekyll copies it as is. Folders starting with "_" (like _source) are skipped.
+exclude:
+  - README.md
+  - LICENSE
