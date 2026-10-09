@@ -1,0 +1,153 @@
+---
+layout: tool
+title: "Bone Health Risk Check: Osteoporosis Risk Factors in 2 Minutes"
+h1: "Bone health risk check"
+description: "A private, two-minute check of the common risk factors for osteoporosis and fractures, with clear next steps and questions to take to your doctor."
+lede: "Answer a dozen quick questions about the factors doctors and bone health organizations look at. Your answers stay on your device, and you'll get plain next steps."
+scripts: [tools/risk]
+cta: care
+priority: 0.95
+keywords: [osteoporosis risk, bone density risk, osteoporosis test online, fracture risk, bone health quiz, osteopenia risk]
+faq:
+  - q: "Is this an osteoporosis test?"
+    a: "No. Only a bone density scan (DXA) and a clinical assessment can diagnose osteoporosis. This check counts recognized risk factors to help you decide whether to talk to a doctor about testing."
+  - q: "How is this different from FRAX?"
+    a: "FRAX is a validated calculator that estimates your 10-year probability of a major fracture, using country-specific data and, optionally, a bone density result. This check is simpler: it lists the factors in your answers and suggests next steps. We link to FRAX in your result."
+  - q: "Who should get a bone density scan?"
+    a: "In the United States, the Preventive Services Task Force recommends screening for all women 65 and older, and for younger postmenopausal women at increased risk. Many organizations suggest men talk about testing from about age 70, or earlier with risk factors. Your doctor can advise you."
+  - q: "Do you store my answers?"
+    a: "No. The check runs in your browser and nothing is sent unless you choose to email yourself a copy using the optional form."
+  - q: "My result says few risk factors. Can I still get osteoporosis?"
+    a: "Yes. Some people with few listed risk factors still lose bone. If you break a bone easily, lose height or have back pain that comes on suddenly, see a doctor whatever this check says."
+sources:
+  - title: "Osteoporosis to Prevent Fractures: Screening — US Preventive Services Task Force (2025)"
+    url: "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening"
+  - title: "Osteoporosis: Overview — NIH Osteoporosis and Related Bone Diseases National Resource Center (NIAMS)"
+    url: "https://www.niams.nih.gov/health-topics/osteoporosis"
+  - title: "Risk factors — International Osteoporosis Foundation"
+    url: "https://www.osteoporosis.foundation/patients/about-osteoporosis/risk-factors"
+  - title: "FRAX fracture risk assessment tool — Fracture Risk Assessment"
+    url: "https://www.fraxplus.org/"
+  - title: "Osteoporosis: Symptoms and causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/osteoporosis/symptoms-causes/syc-20351968"
+related_tools: [calcium-calculator, bone-exercise-planner]
+related_guides: [osteoporosis-guide, bone-density-test-guide, calcium-and-vitamin-d-guide]
+---
+<div class="tool">
+<div class="split" style="gap:28px">
+<form data-risk novalidate>
+<div class="q-block">
+<p>Sex at birth <span class="hint">Bone loss patterns differ, especially around menopause.</span></p>
+<div class="choices">
+<label class="choice"><input type="radio" name="sex" value="female"><span>Female</span></label>
+<label class="choice"><input type="radio" name="sex" value="male"><span>Male</span></label>
+</div>
+</div>
+<div class="q-block">
+<p>Age</p>
+<div class="choices">
+<label class="choice"><input type="radio" name="age" value="under-50"><span>Under 50</span></label>
+<label class="choice"><input type="radio" name="age" value="50-64"><span>50 to 64</span></label>
+<label class="choice"><input type="radio" name="age" value="65-74"><span>65 to 74</span></label>
+<label class="choice"><input type="radio" name="age" value="75+"><span>75 or older</span></label>
+</div>
+</div>
+<div class="q-block">
+<p>Which of these apply to you? <span class="hint">Choose all that apply, or none.</span></p>
+<div class="choices-grid">
+<label class="choice"><input type="checkbox" name="history" value="fragility_fracture"><span>I broke a bone after age 50 from a fall from standing height or less</span></label>
+<label class="choice"><input type="checkbox" name="history" value="parent_hip"><span>A parent broke a hip</span></label>
+<label class="choice"><input type="checkbox" name="history" value="steroids"><span>I've taken steroid tablets (such as prednisone) for 3 months or more</span></label>
+<label class="choice"><input type="checkbox" name="history" value="height_loss"><span>I've lost 4 cm (1.5 in) or more in height</span></label>
+<label class="choice"><input type="checkbox" name="history" value="ra"><span>I have rheumatoid arthritis</span></label>
+<label class="choice"><input type="checkbox" name="history" value="conditions"><span>I have another condition or treatment that can affect bones</span></label>
+<label class="choice" data-female-only hidden><input type="checkbox" name="history" value="early_menopause"><span>My menopause started before 45</span></label>
+<label class="choice"><input type="checkbox" name="history" value="falls"><span>I've fallen in the past year</span></label>
+</div>
+</div>
+<div class="q-block">
+<p>Height and weight <span class="hint">Optional. Used only to work out body mass index.</span></p>
+<div class="seg" role="group" aria-label="Units">
+<label><input type="radio" name="unit" value="imperial" checked>ft, in, lb</label>
+<label><input type="radio" name="unit" value="metric">cm, kg</label>
+</div>
+<div class="grid-3" data-units="imperial">
+<label class="field"><span>Feet</span><input type="number" name="height_ft" min="3" max="8" inputmode="numeric"></label>
+<label class="field"><span>Inches</span><input type="number" name="height_in" min="0" max="11" inputmode="numeric"></label>
+<label class="field"><span>Pounds</span><input type="number" name="weight_lb" min="60" max="700" inputmode="decimal"></label>
+</div>
+<div class="grid-2" data-units="metric" hidden>
+<label class="field"><span>Height (cm)</span><input type="number" name="height_cm" min="100" max="240" inputmode="decimal"></label>
+<label class="field"><span>Weight (kg)</span><input type="number" name="weight_kg" min="25" max="320" inputmode="decimal"></label>
+</div>
+</div>
+<div class="q-block">
+<p>Do you currently smoke?</p>
+<div class="choices"><label class="choice"><input type="radio" name="smoke" value="no"><span>No</span></label><label class="choice"><input type="radio" name="smoke" value="yes"><span>Yes</span></label></div>
+</div>
+<div class="q-block">
+<p>Alcoholic drinks on a typical day</p>
+<div class="choices"><label class="choice"><input type="radio" name="alcohol" value="0-2"><span>0 to 2</span></label><label class="choice"><input type="radio" name="alcohol" value="3+"><span>3 or more</span></label></div>
+</div>
+<div class="q-block">
+<p>Weight-bearing activity (walking, dancing, strength work)</p>
+<div class="choices"><label class="choice"><input type="radio" name="active" value="most"><span>Most days</span></label><label class="choice"><input type="radio" name="active" value="some"><span>Some days</span></label><label class="choice"><input type="radio" name="active" value="rarely"><span>Rarely</span></label></div>
+</div>
+<div class="q-block">
+<p>Calcium-rich foods (dairy, fortified drinks, tofu, canned fish with bones)</p>
+<div class="choices"><label class="choice"><input type="radio" name="calcium" value="ok"><span>Two or more servings a day</span></label><label class="choice"><input type="radio" name="calcium" value="low"><span>Fewer</span></label></div>
+</div>
+<div class="q-block">
+<p>Vitamin D (regular sun, fortified foods or a supplement)</p>
+<div class="choices"><label class="choice"><input type="radio" name="sun" value="ok"><span>Yes, most of the time</span></label><label class="choice"><input type="radio" name="sun" value="low"><span>Rarely</span></label></div>
+</div>
+<div class="tool-actions"><button class="btn btn-primary" type="submit">See my result</button><button class="btn btn-ghost" type="button" data-reset>Start over</button></div>
+</form>
+
+<div class="stack">
+<div class="results" data-risk-result aria-live="polite"></div>
+<div class="panel">
+<h2 style="font-size:1.45rem">Email me my result and checklist</h2>
+<p class="muted" style="font-size:var(--fs-sm)">We'll send your result with questions to ask your doctor. Optional.</p>
+<form class="form" data-form="risk-result" data-subject="New lead: bone health risk check result — 206206" data-success="Sent. Check your inbox for your result and questions for your doctor." novalidate>
+<div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+<input type="hidden" name="result_summary" value="">
+<label class="field"><span>Email</span><input type="email" name="email" required autocomplete="email"></label>
+<label class="field"><span>Country</span><input type="text" name="country" autocomplete="country-name"></label>
+<label class="check"><input type="checkbox" name="consent_contact" value="yes" required data-consent> <span>Email me my result. 206206 may also follow up about finding a bone density service near me. I can opt out at any time.</span></label>
+<label class="check"><input type="checkbox" name="consent_newsletter" value="yes" data-consent> <span>Send me The 206 Brief, about two emails a month.</span></label>
+<button class="btn btn-primary" type="submit">Email my result</button>
+<p class="form-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!--article-->
+<div class="callout warn"><strong>Important:</strong> This check is general education, not medical advice or a diagnosis. If you've recently broken a bone, have sudden severe back pain or have lost height, see a doctor.</div>
+
+<h2 id="why-risk-factors">Why risk factors matter</h2>
+<p>Osteoporosis is often called a silent disease, because bone thins without pain until something breaks. The International Osteoporosis Foundation estimates that about one in three women and one in five men over 50 will break a bone because of osteoporosis. Knowing your risk factors early gives you time to test, build bone and prevent that first fracture.</p>
+
+<h2 id="what-we-ask">What the check asks, and why</h2>
+<p>The questions follow the risk factors that appear across major guidelines and in standard fracture-risk tools:</p>
+<ul>
+<li><strong>Age and sex.</strong> Bone loss speeds up after menopause, and risk rises steadily with age in everyone.</li>
+<li><strong>A previous low-impact fracture.</strong> A broken bone from a fall from standing height after 50 is one of the strongest signs of fragile bones.</li>
+<li><strong>Family history.</strong> A parent's hip fracture points to inherited bone strength and structure.</li>
+<li><strong>Medicines and conditions.</strong> Long-term steroid tablets, rheumatoid arthritis and several other conditions speed up bone loss.</li>
+<li><strong>Height loss.</strong> Losing several centimeters can mean small fractures in the spine that went unnoticed.</li>
+<li><strong>Body weight, smoking and alcohol.</strong> Low body weight, smoking and drinking three or more units a day are all linked to weaker bones.</li>
+<li><strong>Activity, calcium and vitamin D.</strong> These lifestyle factors don't count for much on their own, but they're the ones you can change today.</li>
+</ul>
+{% include ad.html %}
+<h2 id="after-your-result">What to do with your result</h2>
+<p>Whatever your result, the same foundations help: regular <a href="exercises-for-strong-bones.html">weight-bearing and strength exercise</a>, enough <a href="calcium-and-vitamin-d-guide.html">calcium and vitamin D</a>, not smoking, moderate alcohol and fall-proofing your home. If your result shows some or several risk factors, ask your doctor whether a <a href="bone-density-test-guide.html">bone density (DXA) scan</a> and a FRAX assessment are right for you.</p>
+<h3>Questions to ask your doctor</h3>
+<ul>
+<li>Based on my risk factors, should I have a bone density scan, and when?</li>
+<li>What's my 10-year fracture risk using FRAX?</li>
+<li>Are any of my medicines affecting my bones or my balance?</li>
+<li>Should my vitamin D level be checked?</li>
+<li>What exercise is safe and useful for me?</li>
+</ul>

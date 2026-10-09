@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<style>.b{fill:#efe5cf;stroke:#8a785d;stroke-width:1.4}.lo{stroke:#8a785d;stroke-linecap:round}.li{stroke:#efe5cf;stroke-linecap:round}.hole{fill:#5a4a37}.rib,.clav,.hy{fill:none;stroke:#8a785d;stroke-width:3.6;stroke-linecap:round}.seam{stroke:#8a785d;stroke-width:1;fill:none}title{display:none}</style>
+<rect width="1200" height="630" fill="#f6f1e7"/>
+<rect x="0" y="0" width="1200" height="14" fill="#c4402a"/>
+<g transform="translate(860 22) scale(.86)"><g class="zone" data-zone="spine" tabindex="0" role="button" aria-label="Spine: 26 bones"><title>Spine: 26 bones</title><rect class="b" x="144.0" y="104" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="113" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="122" width="12" height="7" rx="2.5"/>
+<rect class="b" x="144.0" y="131" width="12" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="140" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="149" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="158" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="167" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="176" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="185" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="194" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="203" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="212" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="221" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="230" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="239" width="13" height="7" rx="2.5"/>
+<rect class="b" x="143.5" y="248" width="13" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="257" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="266" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="275" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="284" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="293" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="302" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="311" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="320" width="16" height="7" rx="2.5"/>
+<rect class="b" x="142.0" y="329" width="16" height="7" rx="2.5"/>
+<path class="b" d="M138 334 L162 334 L150 368 Z"/>
+<path class="b" d="M147 369 L153 369 L150 380 Z"/>
+</g>
+<g class="zone" data-zone="chest" tabindex="0" role="button" aria-label="Chest: 25 bones"><title>Chest: 25 bones</title><rect class="b" x="145" y="130" width="10" height="70" rx="4"/>
+<path class="rib" d="M155 136 Q189.0 132 180.0 148.0"/>
+<path class="rib" d="M 145.0 136 Q 111.0 132 120.0 148.0"/>
+<path class="rib" d="M155 146 Q191.4 142 182.4 158.6"/>
+<path class="rib" d="M 145.0 146 Q 108.6 142 117.6 158.6"/>
+<path class="rib" d="M155 156 Q193.8 152 184.8 169.2"/>
+<path class="rib" d="M 145.0 156 Q 106.2 152 115.2 169.2"/>
+<path class="rib" d="M155 166 Q196.2 162 187.2 179.8"/>
+<path class="rib" d="M 145.0 166 Q 103.8 162 112.8 179.8"/>
+<path class="rib" d="M155 176 Q198.6 172 189.6 190.4"/>
+<path class="rib" d="M 145.0 176 Q 101.4 172 110.4 190.4"/>
+<path class="rib" d="M155 186 Q201.0 182 192.0 201.0"/>
+<path class="rib" d="M 145.0 186 Q 99.0 182 108.0 201.0"/>
+<path class="rib" d="M155 196 Q203.4 192 194.4 211.6"/>
+<path class="rib" d="M 145.0 196 Q 96.6 192 105.6 211.6"/>
+<path class="rib" d="M155 206 Q203.4 202 194.4 222.2"/>
+<path class="rib" d="M 145.0 206 Q 96.6 202 105.6 222.2"/>
+<path class="rib" d="M155 216 Q199.4 212 190.4 232.8"/>
+<path class="rib" d="M 145.0 216 Q 100.6 212 109.6 232.8"/>
+<path class="rib" d="M155 226 Q195.4 222 186.4 243.4"/>
+<path class="rib" d="M 145.0 226 Q 104.6 222 113.6 243.4"/>
+</g>
+<g class="zone" data-zone="shoulder" tabindex="0" role="button" aria-label="Shoulders: 4 bones"><title>Shoulders: 4 bones</title><path class="clav" d="M155 124 Q177 116 201 126"/>
+<path class="clav" d="M 145.0 124 Q 123.0 116 99.0 126"/>
+<path class="b scap" d="M190 130 L211 132 L197 176 Z"/>
+<path class="b scap" d="M 110.0 130 L 89.0 132 L 103.0 176 Z"/>
+</g>
+<g class="zone" data-zone="pelvis" tabindex="0" role="button" aria-label="Pelvis: 2 bones"><title>Pelvis: 2 bones</title><path class="b" d="M152 336 C170 320 199 322 202 340 C202 358 188 374 171 382 C162 386 155 380 155 371 Z"/>
+<path class="b" d="M 148.0 336 C 130.0 320 101.0 322 98.0 340 C 98.0 358 112.0 374 129.0 382 C 138.0 386 145.0 380 145.0 371 Z"/>
+<ellipse class="hole" cx="171" cy="370" rx="7" ry="5.5"/>
+<ellipse class="hole" cx="129" cy="370" rx="7" ry="5.5"/>
+</g>
+<g class="zone" data-zone="arm" tabindex="0" role="button" aria-label="Upper arms: 2 bones"><title>Upper arms: 2 bones</title><line class="lo" x1="205" y1="136" x2="214" y2="248" stroke-width="12"/>
+<circle class="b" cx="205" cy="136" r="7.5"/>
+<circle class="b" cx="214" cy="248" r="6.5"/>
+<line class="li" x1="205" y1="136" x2="214" y2="248" stroke-width="9"/>
+<line class="lo" x1="95" y1="136" x2="86" y2="248" stroke-width="12"/>
+<circle class="b" cx="95" cy="136" r="7.5"/>
+<circle class="b" cx="86" cy="248" r="6.5"/>
+<line class="li" x1="95" y1="136" x2="86" y2="248" stroke-width="9"/>
+</g>
+<g class="zone" data-zone="forearm" tabindex="0" role="button" aria-label="Forearms: 4 bones"><title>Forearms: 4 bones</title><line class="lo" x1="209" y1="258" x2="216" y2="358" stroke-width="7.5"/>
+<circle class="b" cx="209" cy="258" r="4.5"/>
+<circle class="b" cx="216" cy="358" r="3.5"/>
+<line class="li" x1="209" y1="258" x2="216" y2="358" stroke-width="4.5"/>
+<line class="lo" x1="91" y1="258" x2="84" y2="358" stroke-width="7.5"/>
+<circle class="b" cx="91" cy="258" r="4.5"/>
+<circle class="b" cx="84" cy="358" r="3.5"/>
+<line class="li" x1="91" y1="258" x2="84" y2="358" stroke-width="4.5"/>
+<line class="lo" x1="218" y1="258" x2="228" y2="358" stroke-width="8"/>
+<circle class="b" cx="218" cy="258" r="4"/>
+<circle class="b" cx="228" cy="358" r="4.5"/>
+<line class="li" x1="218" y1="258" x2="228" y2="358" stroke-width="5"/>
+<line class="lo" x1="82" y1="258" x2="72" y2="358" stroke-width="8"/>
+<circle class="b" cx="82" cy="258" r="4"/>
+<circle class="b" cx="72" cy="358" r="4.5"/>
+<line class="li" x1="82" y1="258" x2="72" y2="358" stroke-width="5"/>
+</g>
+<g class="zone" data-zone="hand" tabindex="0" role="button" aria-label="Wrists and hands: 54 bones"><title>Wrists and hands: 54 bones</title><circle class="b" cx="217" cy="366" r="3.2"/>
+<circle class="b" cx="223" cy="364" r="3.2"/>
+<circle class="b" cx="229" cy="367" r="3.2"/>
+<circle class="b" cx="216" cy="373" r="3.2"/>
+<circle class="b" cx="222" cy="372" r="3.2"/>
+<circle class="b" cx="228" cy="374" r="3.2"/>
+<circle class="b" cx="220" cy="379" r="3.2"/>
+<circle class="b" cx="227" cy="380" r="3.2"/>
+<line class="lo" x1="214" y1="382" x2="206" y2="398" stroke-width="5"/>
+<line class="li" x1="214" y1="382" x2="206" y2="398" stroke-width="2.6"/>
+<line class="lo" x1="218" y1="384" x2="214" y2="406" stroke-width="5"/>
+<line class="li" x1="218" y1="384" x2="214" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="223" y1="384" x2="223" y2="408" stroke-width="5"/>
+<line class="li" x1="223" y1="384" x2="223" y2="408" stroke-width="2.6"/>
+<line class="lo" x1="228" y1="384" x2="231" y2="406" stroke-width="5"/>
+<line class="li" x1="228" y1="384" x2="231" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="232" y1="382" x2="238" y2="402" stroke-width="5"/>
+<line class="li" x1="232" y1="382" x2="238" y2="402" stroke-width="2.6"/>
+<line class="lo" x1="206" y1="399.5" x2="198" y2="414" stroke-width="4.4"/>
+<line class="li" x1="206" y1="399.5" x2="198" y2="414" stroke-width="2.2"/>
+<line class="lo" x1="214" y1="407.5" x2="211" y2="420" stroke-width="4.4"/>
+<line class="li" x1="214" y1="407.5" x2="211" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="211" y1="421.5" x2="209" y2="430" stroke-width="4.4"/>
+<line class="li" x1="211" y1="421.5" x2="209" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="223" y1="409.5" x2="223" y2="423" stroke-width="4.4"/>
+<line class="li" x1="223" y1="409.5" x2="223" y2="423" stroke-width="2.2"/>
+<line class="lo" x1="223" y1="424.5" x2="223" y2="434" stroke-width="4.4"/>
+<line class="li" x1="223" y1="424.5" x2="223" y2="434" stroke-width="2.2"/>
+<line class="lo" x1="231" y1="407.5" x2="234" y2="420" stroke-width="4.4"/>
+<line class="li" x1="231" y1="407.5" x2="234" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="234" y1="421.5" x2="236" y2="430" stroke-width="4.4"/>
+<line class="li" x1="234" y1="421.5" x2="236" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="238" y1="403.5" x2="242" y2="413" stroke-width="4.4"/>
+<line class="li" x1="238" y1="403.5" x2="242" y2="413" stroke-width="2.2"/>
+<line class="lo" x1="242" y1="414.5" x2="244" y2="421" stroke-width="4.4"/>
+<line class="li" x1="242" y1="414.5" x2="244" y2="421" stroke-width="2.2"/>
+<circle class="b" cx="83" cy="366" r="3.2"/>
+<circle class="b" cx="77" cy="364" r="3.2"/>
+<circle class="b" cx="71" cy="367" r="3.2"/>
+<circle class="b" cx="84" cy="373" r="3.2"/>
+<circle class="b" cx="78" cy="372" r="3.2"/>
+<circle class="b" cx="72" cy="374" r="3.2"/>
+<circle class="b" cx="80" cy="379" r="3.2"/>
+<circle class="b" cx="73" cy="380" r="3.2"/>
+<line class="lo" x1="86" y1="382" x2="94" y2="398" stroke-width="5"/>
+<line class="li" x1="86" y1="382" x2="94" y2="398" stroke-width="2.6"/>
+<line class="lo" x1="82" y1="384" x2="86" y2="406" stroke-width="5"/>
+<line class="li" x1="82" y1="384" x2="86" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="77" y1="384" x2="77" y2="408" stroke-width="5"/>
+<line class="li" x1="77" y1="384" x2="77" y2="408" stroke-width="2.6"/>
+<line class="lo" x1="72" y1="384" x2="69" y2="406" stroke-width="5"/>
+<line class="li" x1="72" y1="384" x2="69" y2="406" stroke-width="2.6"/>
+<line class="lo" x1="68" y1="382" x2="62" y2="402" stroke-width="5"/>
+<line class="li" x1="68" y1="382" x2="62" y2="402" stroke-width="2.6"/>
+<line class="lo" x1="94" y1="399.5" x2="102" y2="414" stroke-width="4.4"/>
+<line class="li" x1="94" y1="399.5" x2="102" y2="414" stroke-width="2.2"/>
+<line class="lo" x1="86" y1="407.5" x2="89" y2="420" stroke-width="4.4"/>
+<line class="li" x1="86" y1="407.5" x2="89" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="89" y1="421.5" x2="91" y2="430" stroke-width="4.4"/>
+<line class="li" x1="89" y1="421.5" x2="91" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="77" y1="409.5" x2="77" y2="423" stroke-width="4.4"/>
+<line class="li" x1="77" y1="409.5" x2="77" y2="423" stroke-width="2.2"/>
+<line class="lo" x1="77" y1="424.5" x2="77" y2="434" stroke-width="4.4"/>
+<line class="li" x1="77" y1="424.5" x2="77" y2="434" stroke-width="2.2"/>
+<line class="lo" x1="69" y1="407.5" x2="66" y2="420" stroke-width="4.4"/>
+<line class="li" x1="69" y1="407.5" x2="66" y2="420" stroke-width="2.2"/>
+<line class="lo" x1="66" y1="421.5" x2="64" y2="430" stroke-width="4.4"/>
+<line class="li" x1="66" y1="421.5" x2="64" y2="430" stroke-width="2.2"/>
+<line class="lo" x1="62" y1="403.5" x2="58" y2="413" stroke-width="4.4"/>
+<line class="li" x1="62" y1="403.5" x2="58" y2="413" stroke-width="2.2"/>
+<line class="lo" x1="58" y1="414.5" x2="56" y2="421" stroke-width="4.4"/>
+<line class="li" x1="58" y1="414.5" x2="56" y2="421" stroke-width="2.2"/>
+</g>
+<g class="zone" data-zone="thigh" tabindex="0" role="button" aria-label="Thighs: 2 bones"><title>Thighs: 2 bones</title><line class="lo" x1="172" y1="388" x2="166" y2="512" stroke-width="13"/>
+<circle class="b" cx="172" cy="388" r="6"/>
+<circle class="b" cx="166" cy="512" r="8"/>
+<line class="li" x1="172" y1="388" x2="166" y2="512" stroke-width="10"/>
+<line class="lo" x1="128" y1="388" x2="134" y2="512" stroke-width="13"/>
+<circle class="b" cx="128" cy="388" r="6"/>
+<circle class="b" cx="134" cy="512" r="8"/>
+<line class="li" x1="128" y1="388" x2="134" y2="512" stroke-width="10"/>
+<circle class="b" cx="161" cy="381" r="7"/>
+<circle class="b" cx="139" cy="381" r="7"/>
+</g>
+<g class="zone" data-zone="knee" tabindex="0" role="button" aria-label="Kneecaps: 2 bones"><title>Kneecaps: 2 bones</title><circle class="b pat" cx="166" cy="524" r="6.5"/>
+<circle class="b pat" cx="134" cy="524" r="6.5"/>
+</g>
+<g class="zone" data-zone="leg" tabindex="0" role="button" aria-label="Lower legs: 4 bones"><title>Lower legs: 4 bones</title><line class="lo" x1="166" y1="536" x2="165" y2="624" stroke-width="11"/>
+<circle class="b" cx="166" cy="536" r="6.5"/>
+<circle class="b" cx="165" cy="624" r="5"/>
+<line class="li" x1="166" y1="536" x2="165" y2="624" stroke-width="8"/>
+<line class="lo" x1="134" y1="536" x2="135" y2="624" stroke-width="11"/>
+<circle class="b" cx="134" cy="536" r="6.5"/>
+<circle class="b" cx="135" cy="624" r="5"/>
+<line class="li" x1="134" y1="536" x2="135" y2="624" stroke-width="8"/>
+<line class="lo" x1="179" y1="540" x2="177" y2="620" stroke-width="6.6"/>
+<circle class="b" cx="179" cy="540" r="3.6"/>
+<circle class="b" cx="177" cy="620" r="3.6"/>
+<line class="li" x1="179" y1="540" x2="177" y2="620" stroke-width="3.6"/>
+<line class="lo" x1="121" y1="540" x2="123" y2="620" stroke-width="6.6"/>
+<circle class="b" cx="121" cy="540" r="3.6"/>
+<circle class="b" cx="123" cy="620" r="3.6"/>
+<line class="li" x1="121" y1="540" x2="123" y2="620" stroke-width="3.6"/>
+</g>
+<g class="zone" data-zone="foot" tabindex="0" role="button" aria-label="Ankles and feet: 52 bones"><title>Ankles and feet: 52 bones</title><circle class="b" cx="167" cy="632" r="5"/>
+<circle class="b" cx="175" cy="633" r="4"/>
+<circle class="b" cx="164" cy="640" r="3.4"/>
+<circle class="b" cx="171" cy="641" r="3.2"/>
+<circle class="b" cx="178" cy="641" r="3.2"/>
+<circle class="b" cx="184" cy="639" r="3"/>
+<line class="lo" x1="162" y1="645" x2="158" y2="662" stroke-width="5"/>
+<line class="li" x1="162" y1="645" x2="158" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="158" y1="664" x2="156.4" y2="671" stroke-width="4.4"/>
+<line class="li" x1="158" y1="664" x2="156.4" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="167" y1="646" x2="166" y2="664" stroke-width="5"/>
+<line class="li" x1="167" y1="646" x2="166" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="166" y1="666" x2="165.6" y2="673" stroke-width="4.4"/>
+<line class="li" x1="166" y1="666" x2="165.6" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="172" y1="646" x2="173" y2="664" stroke-width="5"/>
+<line class="li" x1="172" y1="646" x2="173" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="173" y1="666" x2="173.4" y2="673" stroke-width="4.4"/>
+<line class="li" x1="173" y1="666" x2="173.4" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="178" y1="645" x2="180" y2="662" stroke-width="5"/>
+<line class="li" x1="178" y1="645" x2="180" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="180" y1="664" x2="180.8" y2="671" stroke-width="4.4"/>
+<line class="li" x1="180" y1="664" x2="180.8" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="184" y1="643" x2="187" y2="659" stroke-width="5"/>
+<line class="li" x1="184" y1="643" x2="187" y2="659" stroke-width="2.6"/>
+<line class="lo" x1="187" y1="661" x2="188.2" y2="668" stroke-width="4.4"/>
+<line class="li" x1="187" y1="661" x2="188.2" y2="668" stroke-width="2.2"/>
+<circle class="b" cx="133" cy="632" r="5"/>
+<circle class="b" cx="125" cy="633" r="4"/>
+<circle class="b" cx="136" cy="640" r="3.4"/>
+<circle class="b" cx="129" cy="641" r="3.2"/>
+<circle class="b" cx="122" cy="641" r="3.2"/>
+<circle class="b" cx="116" cy="639" r="3"/>
+<line class="lo" x1="138" y1="645" x2="142" y2="662" stroke-width="5"/>
+<line class="li" x1="138" y1="645" x2="142" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="142" y1="664" x2="143.6" y2="671" stroke-width="4.4"/>
+<line class="li" x1="142" y1="664" x2="143.6" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="133" y1="646" x2="134" y2="664" stroke-width="5"/>
+<line class="li" x1="133" y1="646" x2="134" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="134" y1="666" x2="134.4" y2="673" stroke-width="4.4"/>
+<line class="li" x1="134" y1="666" x2="134.4" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="128" y1="646" x2="127" y2="664" stroke-width="5"/>
+<line class="li" x1="128" y1="646" x2="127" y2="664" stroke-width="2.6"/>
+<line class="lo" x1="127" y1="666" x2="126.6" y2="673" stroke-width="4.4"/>
+<line class="li" x1="127" y1="666" x2="126.6" y2="673" stroke-width="2.2"/>
+<line class="lo" x1="122" y1="645" x2="120" y2="662" stroke-width="5"/>
+<line class="li" x1="122" y1="645" x2="120" y2="662" stroke-width="2.6"/>
+<line class="lo" x1="120" y1="664" x2="119.19999999999999" y2="671" stroke-width="4.4"/>
+<line class="li" x1="120" y1="664" x2="119.19999999999999" y2="671" stroke-width="2.2"/>
+<line class="lo" x1="116" y1="643" x2="113" y2="659" stroke-width="5"/>
+<line class="li" x1="116" y1="643" x2="113" y2="659" stroke-width="2.6"/>
+<line class="lo" x1="113" y1="661" x2="111.80000000000001" y2="668" stroke-width="4.4"/>
+<line class="li" x1="113" y1="661" x2="111.80000000000001" y2="668" stroke-width="2.2"/>
+</g>
+<g class="zone" data-zone="head" tabindex="0" role="button" aria-label="Skull and ears: 28 bones"><title>Skull and ears: 28 bones</title><ellipse class="b" cx="150" cy="48" rx="33" ry="37"/>
+<path class="b" d="M127 66 Q128 96 150 101 Q172 96 173 66 Q160 74 150 74 Q140 74 127 66 Z"/>
+<ellipse class="hole" cx="138" cy="52" rx="8" ry="7"/>
+<ellipse class="hole" cx="162" cy="52" rx="8" ry="7"/>
+<path class="hole" d="M150 60 L145.5 71 L154.5 71 Z"/>
+<path class="seam" d="M136 86 L164 86 M141 82 L141 90 M147 82 L147 90 M153 82 L153 90 M159 82 L159 90"/>
+</g>
+<g class="zone" data-zone="neck" tabindex="0" role="button" aria-label="Hyoid: 1 bone"><title>Hyoid: 1 bone</title><path class="hy" d="M139 111 Q150 121 161 111"/>
+</g>
+</g>
+<text x="72" y="210" font-family="Georgia, 'Times New Roman', serif" font-weight="800" font-size="148" fill="#1e1813" letter-spacing="-3">206206</text>
+<text x="76" y="290" font-family="Georgia, serif" font-weight="700" font-size="56" fill="#c4402a">Every Bone Counts</text>
+<text x="78" y="372" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#5d5347">Explore all 206 bones of the human body.</text>
+<text x="78" y="418" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#5d5347">Free bone health tools and sourced guides.</text>
+<rect x="78" y="478" width="300" height="70" rx="12" fill="#1f1915"/>
+<text x="228" y="524" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#f7f0e4">206206.com</text>
+</svg>
