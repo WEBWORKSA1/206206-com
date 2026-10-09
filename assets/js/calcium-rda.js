@@ -1,0 +1,12 @@
+window.CALCIUM_RDA=[
+{"stage":"Children 1–3","sex":"all","calcium_mg":700,"calcium_ul":2500,"vitd_iu":600},
+{"stage":"Children 4–8","sex":"all","calcium_mg":1000,"calcium_ul":2500,"vitd_iu":600},
+{"stage":"Children 9–13","sex":"all","calcium_mg":1300,"calcium_ul":3000,"vitd_iu":600},
+{"stage":"Teens 14–18","sex":"all","calcium_mg":1300,"calcium_ul":3000,"vitd_iu":600},
+{"stage":"Adults 19–50","sex":"all","calcium_mg":1000,"calcium_ul":2500,"vitd_iu":600},
+{"stage":"Men 51–70","sex":"male","calcium_mg":1000,"calcium_ul":2000,"vitd_iu":600},
+{"stage":"Women 51–70","sex":"female","calcium_mg":1200,"calcium_ul":2000,"vitd_iu":600},
+{"stage":"Adults 71+","sex":"all","calcium_mg":1200,"calcium_ul":2000,"vitd_iu":800},
+{"stage":"Pregnant or lactating 14–18","sex":"female","calcium_mg":1300,"calcium_ul":3000,"vitd_iu":600},
+{"stage":"Pregnant or lactating 19–50","sex":"female","calcium_mg":1000,"calcium_ul":2500,"vitd_iu":600}
+];
