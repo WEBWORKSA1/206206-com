@@ -1,7 +1,7 @@
 /* 206206 service worker: keeps visited tools working offline.
    Pages: network first, cached copy when offline. Assets: cache first by exact URL
    (asset URLs carry a ?v= version, so a new deploy always fetches fresh files). */
-var CACHE = "206206-f50dd2d537";
+var CACHE = "206206-5b0c0ec3c8";
 
 self.addEventListener("install", function (event) {
   event.waitUntil(

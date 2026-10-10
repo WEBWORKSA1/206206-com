@@ -681,9 +681,9 @@
   function initExitIntent() {
     if (doc.body.hasAttribute("data-no-exit") || !window.matchMedia || !window.matchMedia("(pointer: fine)").matches) return;
     var last = parseInt(store.get("exit-shown") || "0", 10);
-    if (Date.now() - last < 7 * 864e5) return;
+    if (Date.now() - last < 30 * 864e5) return;
     var armed = false;
-    setTimeout(function () { armed = true; }, 15000);
+    setTimeout(function () { armed = true; }, 45000);
     function onLeave(e) {
       if (!armed || e.clientY > 0 || e.relatedTarget) return;
       doc.removeEventListener("mouseout", onLeave);
@@ -748,24 +748,6 @@
         g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
       });
     });
-  }
-
-  /* ------------------------------------------------------------ sticky mobile CTA */
-
-  function initStickyCta() {
-    if (doc.body.hasAttribute("data-no-exit") || store.get("sticky-cta-closed")) return;
-    var bar = doc.createElement("div");
-    bar.className = "sticky-cta";
-    bar.innerHTML = '<p>Need a bone or joint specialist?</p><span style="display:flex;gap:6px;align-items:center"><a class="btn btn-primary btn-sm" href="find-care.html">Find care</a>' +
-      '<button type="button" class="icon-btn" aria-label="Dismiss"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></span>';
-    doc.body.appendChild(bar);
-    $("button", bar).addEventListener("click", function () { store.set("sticky-cta-closed", "1"); bar.remove(); });
-    var ticking = false;
-    window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () { bar.classList.toggle("show", window.scrollY > 900); ticking = false; });
-    }, { passive: true });
   }
 
   /* ------------------------------------------------------------ back to top + toc */
@@ -936,7 +918,6 @@
     initCountdown();
     initDonate();
     initSkeleton();
-    initStickyCta();
     initSW();
     $$("[data-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
   }
