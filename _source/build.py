@@ -439,9 +439,9 @@ def head(meta, ctx):
         '<meta name="robots" content="index, follow, max-image-preview:large">'
     base = f'<base href="{BASE_PATH}">\n' if slug == "404" else ""
     adsense = ""
-    if ctx["ads"]:
-        adsense = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" '
-                   f'crossorigin="anonymous"></script>\n')
+    if ctx["adsense"]:
+        adsense = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}"\n'
+                   f'     crossorigin="anonymous"></script>\n')
     og_type = "article" if meta.get("layout") == "guide" else "website"
     jsonld = "".join(f'<script type="application/ld+json">{ld_dumps(obj)}</script>\n' for obj in ctx["jsonld"])
     v = ctx["ver"]
@@ -724,12 +724,37 @@ def layout_tool(meta, body, ctx):
 {aside}
 </div>
 <div class="wrap">{inc_ad({"slot": "after-tool"}, ctx)}</div>
-<div class="wrap article-wrap"><article class="prose">{article}{inc_share({}, ctx)}</article></div>
+<div class="wrap article-wrap"><article class="prose">{article}{related_videos(meta, body, ctx)}{inc_share({}, ctx)}</article></div>
 <div class="wrap after-article">{faq_section(meta.get("faq"))}{sources_section(meta.get("sources"))}{related_section(meta, ctx)}</div>
 {inc_lead_band({}, ctx)}'''
 
 
 H2_RE = re.compile(r'<h2 id="([^"]+)">(.*?)</h2>', re.S)
+
+
+VIDEO_TOPICS = {
+    "list-of-206-bones": "anatomy", "why-babies-have-more-bones": "anatomy", "what-does-206-mean": "anatomy",
+    "osteoporosis-guide": "osteoporosis", "bone-density-test-guide": "osteoporosis",
+    "calcium-and-vitamin-d-guide": "nutrition", "exercises-for-strong-bones": "exercise",
+    "broken-bone-healing-guide": "fractures,anatomy", "arthritis-and-joint-pain-guide": "arthritis,exercise",
+    "bone-explorer": "anatomy", "bone-quiz": "anatomy", "bone-health-risk-check": "osteoporosis",
+    "calcium-calculator": "nutrition", "bone-exercise-planner": "exercise",
+}
+
+
+def related_videos(meta, body, ctx):
+    """A 'Watch' block on guides and tools that don't already embed videos: more engagement, more time on page."""
+    if "video-grid" in body:
+        return ""
+    topic = meta.get("video_topic") or VIDEO_TOPICS.get(meta["slug"])
+    if not topic:
+        return ""
+    grid = inc_video_grid({"topic": topic, "limit": "3"}, ctx)
+    if not grid:
+        return ""
+    return (f'<section class="related-videos" aria-labelledby="watch-title"><h2 id="watch-title">Watch and learn</h2>'
+            f'<p class="muted">Short explainers from trusted creators. Videos load only when you press play. '
+            f'<a href="videos.html">All videos</a></p>{grid}</section>')
 
 
 def layout_guide(meta, body, ctx):
@@ -759,7 +784,7 @@ def layout_guide(meta, body, ctx):
 <nav class="toc" aria-labelledby="toc-title"><p class="toc-title" id="toc-title">On this page</p><ol>{toc}</ol></nav>
 {inc_ad({"slot": "sidebar"}, ctx)}
 </aside>
-<article class="prose">{content}{inc_share({}, ctx)}</article>
+<article class="prose">{content}{related_videos(meta, body, ctx)}{inc_share({}, ctx)}</article>
 </div>
 <div class="wrap after-article">{faq_section(meta.get("faq"))}{sources_section(meta.get("sources"))}{related_section(meta, ctx)}</div>
 {inc_lead_band({}, ctx)}'''
@@ -829,7 +854,10 @@ def build(render_png=False):
         slug = meta["slug"]
         layout = meta.get("layout", "page")
         ads = meta.get("ads", True) and slug != "404"
-        ctx = {"slug": slug, "ver": ver, "guides": guides, "videos": videos, "bones": bones_data, "ads": ads, "jsonld": []}
+        # The AdSense loader (Auto ads) runs on every page with publisher content. It's left off the
+        # 404 page and the two lead-form pages so ads never sit next to form buttons.
+        adsense = slug != "404" and not meta.get("no_adsense")
+        ctx = {"adsense": adsense, "slug": slug, "ver": ver, "guides": guides, "videos": videos, "bones": bones_data, "ads": ads, "jsonld": []}
         if slug == "index":
             ctx["jsonld"].append(org_ld())
             ctx["jsonld"].append({"@context": "https://schema.org", "@type": "WebSite", "name": NAME,
